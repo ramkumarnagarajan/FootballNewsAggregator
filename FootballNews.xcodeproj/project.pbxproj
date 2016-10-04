@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31026D721C0AB4CC00DBF415 /* PlusIcon.png */; };
+		313A07D11BB8C1C100889396 /* ManageAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */; };
+		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
+		313A07DB1BB8ED7200889396 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A07DA1BB8ED7200889396 /* TeamListViewController.swift */; };
+		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
+		313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DD1BB9086400889396 /* HomeIcon2.png */; };
+		313A07E11BB9176800889396 /* settings icon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E01BB9176800889396 /* settings icon 2.png */; };
+		313A07E31BB9191100889396 /* settings icon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E21BB9191100889396 /* settings icon 3.png */; };
+		313A07E51BB91A3600889396 /* twitter_and_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E41BB91A3600889396 /* twitter_and_facebook.png */; };
+		313A07E71BB91CDA00889396 /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E61BB91CDA00889396 /* facebook_login.png */; };
+		313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E81BB91D8000889396 /* facebook_logo.png */; };
+		313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E91BB91D8000889396 /* twitter_logo.png */; };
+		314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */; };
+		314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */; };
+		315379851C1408730010F544 /* BluePlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 315379841C1408730010F544 /* BluePlusIcon.png */; };
+		3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088D1BAE371500435A9A /* AppDelegate.swift */; };
+		317708901BAE371500435A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088F1BAE371500435A9A /* ViewController.swift */; };
+		317708931BAE371500435A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708911BAE371500435A9A /* Main.storyboard */; };
+		317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317708941BAE371500435A9A /* FootballNews.xcdatamodeld */; };
+		317708981BAE371500435A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317708971BAE371500435A9A /* Assets.xcassets */; };
+		3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708991BAE371500435A9A /* LaunchScreen.storyboard */; };
+		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
+		319FD0381BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */; };
+		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
+		31AD779B1BAE7E5500F77E48 /* LaunchScreenTrophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */; };
+		31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */; };
+		31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */; };
+		31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */; };
+		31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */; };
+		31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */; };
+		31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C121BF07246009BF7CF /* TeamAndSource.swift */; };
+		31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
+		313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAccountsViewController.swift; sourceTree = "<group>"; };
+		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
+		313A07DA1BB8ED7200889396 /* TeamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
+		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
+		313A07DD1BB9086400889396 /* HomeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon2.png; sourceTree = "<group>"; };
+		313A07E01BB9176800889396 /* settings icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings icon 2.png"; sourceTree = "<group>"; };
+		313A07E21BB9191100889396 /* settings icon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings icon 3.png"; sourceTree = "<group>"; };
+		313A07E41BB91A3600889396 /* twitter_and_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_and_facebook.png; sourceTree = "<group>"; };
+		313A07E61BB91CDA00889396 /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
+		313A07E81BB91D8000889396 /* facebook_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_logo.png; sourceTree = "<group>"; };
+		313A07E91BB91D8000889396 /* twitter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo.png; sourceTree = "<group>"; };
+		314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageAccountsIcon.png; sourceTree = "<group>"; };
+		314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageTeamsIcon2.png; sourceTree = "<group>"; };
+		315379841C1408730010F544 /* BluePlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePlusIcon.png; sourceTree = "<group>"; };
+		3177088A1BAE371500435A9A /* FootballNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3177088D1BAE371500435A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3177088F1BAE371500435A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		317708921BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		317708951BAE371500435A9A /* FootballNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballNews.xcdatamodel; sourceTree = "<group>"; };
+		317708971BAE371500435A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3177089A1BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3177089C1BAE371500435A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
+		319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenTrophy.png; sourceTree = "<group>"; };
+		31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenEPL.png; sourceTree = "<group>"; };
+		31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChelseaTeamLogo.png; sourceTree = "<group>"; };
+		31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolTeamLogo.png; sourceTree = "<group>"; };
+		31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon3.png; sourceTree = "<group>"; };
+		31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TeamAnSource+CoreDataProperties.swift"; path = "../TeamAnSource+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		31DE3C121BF07246009BF7CF /* TeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamAndSource.swift; path = ../TeamAndSource.swift; sourceTree = "<group>"; };
+		31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTeamAndSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		317708871BAE371500435A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317708811BAE371500435A9A = {
+			isa = PBXGroup;
+			children = (
+				3177088C1BAE371500435A9A /* FootballNews */,
+				3177088B1BAE371500435A9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3177088B1BAE371500435A9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3177088A1BAE371500435A9A /* FootballNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3177088C1BAE371500435A9A /* FootballNews */ = {
+			isa = PBXGroup;
+			children = (
+				31DE3C151BF07262009BF7CF /* CoreDataModel */,
+				319FD0391BC10AC200801B31 /* ViewControllers */,
+				31AD77971BAE7ABF00F77E48 /* Assets */,
+				3177088D1BAE371500435A9A /* AppDelegate.swift */,
+				317708911BAE371500435A9A /* Main.storyboard */,
+				317708971BAE371500435A9A /* Assets.xcassets */,
+				317708991BAE371500435A9A /* LaunchScreen.storyboard */,
+				3177089C1BAE371500435A9A /* Info.plist */,
+				317708941BAE371500435A9A /* FootballNews.xcdatamodeld */,
+			);
+			path = FootballNews;
+			sourceTree = "<group>";
+		};
+		319FD0391BC10AC200801B31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3177088F1BAE371500435A9A /* ViewController.swift */,
+				31AD77911BAE768000F77E48 /* SetupViewController.swift */,
+				313A07DA1BB8ED7200889396 /* TeamListViewController.swift */,
+				319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */,
+				313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */,
+				319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		31AD77971BAE7ABF00F77E48 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				315379841C1408730010F544 /* BluePlusIcon.png */,
+				313A07DC1BB9086400889396 /* HomeIcon.png */,
+				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
+				313A07E01BB9176800889396 /* settings icon 2.png */,
+				314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */,
+				314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */,
+				313A07DD1BB9086400889396 /* HomeIcon2.png */,
+				313A07E41BB91A3600889396 /* twitter_and_facebook.png */,
+				313A07E21BB9191100889396 /* settings icon 3.png */,
+				313A07E61BB91CDA00889396 /* facebook_login.png */,
+				31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */,
+				313A07D81BB8EB3700889396 /* SettingsBlue.png */,
+				31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */,
+				313A07E81BB91D8000889396 /* facebook_logo.png */,
+				313A07E91BB91D8000889396 /* twitter_logo.png */,
+				31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */,
+				31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */,
+				31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		31DE3C151BF07262009BF7CF /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */,
+				31DE3C121BF07246009BF7CF /* TeamAndSource.swift */,
+				31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		317708891BAE371500435A9A /* FootballNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3177089F1BAE371500435A9A /* Build configuration list for PBXNativeTarget "FootballNews" */;
+			buildPhases = (
+				317708861BAE371500435A9A /* Sources */,
+				317708871BAE371500435A9A /* Frameworks */,
+				317708881BAE371500435A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballNews;
+			productName = FootballNews;
+			productReference = 3177088A1BAE371500435A9A /* FootballNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		317708821BAE371500435A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Ram;
+				TargetAttributes = {
+					317708891BAE371500435A9A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 67B4FC7A84;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 317708851BAE371500435A9A /* Build configuration list for PBXProject "FootballNews" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 317708811BAE371500435A9A;
+			productRefGroup = 3177088B1BAE371500435A9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				317708891BAE371500435A9A /* FootballNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		317708881BAE371500435A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313A07E11BB9176800889396 /* settings icon 2.png in Resources */,
+				313A07DE1BB9086400889396 /* HomeIcon.png in Resources */,
+				314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */,
+				3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */,
+				314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */,
+				31AD779B1BAE7E5500F77E48 /* LaunchScreenTrophy.png in Resources */,
+				31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */,
+				317708981BAE371500435A9A /* Assets.xcassets in Resources */,
+				31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */,
+				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
+				313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */,
+				31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */,
+				31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */,
+				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
+				313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */,
+				313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */,
+				313A07E71BB91CDA00889396 /* facebook_login.png in Resources */,
+				313A07E31BB9191100889396 /* settings icon 3.png in Resources */,
+				313A07E51BB91A3600889396 /* twitter_and_facebook.png in Resources */,
+				317708931BAE371500435A9A /* Main.storyboard in Resources */,
+				31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		317708861BAE371500435A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */,
+				313A07D11BB8C1C100889396 /* ManageAccountsViewController.swift in Sources */,
+				31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */,
+				31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */,
+				317708901BAE371500435A9A /* ViewController.swift in Sources */,
+				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
+				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
+				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
+				319FD0381BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift in Sources */,
+				313A07DB1BB8ED7200889396 /* TeamListViewController.swift in Sources */,
+				31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		317708911BAE371500435A9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317708921BAE371500435A9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		317708991BAE371500435A9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3177089A1BAE371500435A9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3177089D1BAE371500435A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3177089E1BAE371500435A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317708A01BAE371500435A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FootballNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		317708A11BAE371500435A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = FootballNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		317708851BAE371500435A9A /* Build configuration list for PBXProject "FootballNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3177089D1BAE371500435A9A /* Debug */,
+				3177089E1BAE371500435A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3177089F1BAE371500435A9A /* Build configuration list for PBXNativeTarget "FootballNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317708A01BAE371500435A9A /* Debug */,
+				317708A11BAE371500435A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		317708941BAE371500435A9A /* FootballNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				317708951BAE371500435A9A /* FootballNews.xcdatamodel */,
+			);
+			currentVersion = 317708951BAE371500435A9A /* FootballNews.xcdatamodel */;
+			path = FootballNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 317708821BAE371500435A9A /* Project object */;
+}
