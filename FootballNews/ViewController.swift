@@ -19,7 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let backgroundColor = UIColor(red:0,green:172/256,blue:237/256,alpha:1)
+        navigationController?.navigationBar.barTintColor = backgroundColor
+        navigationController?.navigationBar.backItem?.backBarButtonItem?.tintColor = UIColor.white
     }
 
     @IBAction func btnShowLiverpoolUpdates(_ sender: AnyObject) {

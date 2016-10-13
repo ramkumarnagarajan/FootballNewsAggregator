@@ -36,6 +36,7 @@
 		31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */; };
 		31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */; };
 		31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */; };
+		31D2D8481DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */; };
 		31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */; };
 		31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C121BF07246009BF7CF /* TeamAndSource.swift */; };
 		31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */; };
@@ -73,6 +74,7 @@
 		31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChelseaTeamLogo.png; sourceTree = "<group>"; };
 		31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolTeamLogo.png; sourceTree = "<group>"; };
 		31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon3.png; sourceTree = "<group>"; };
+		31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTeamUpdatesViewController.swift; sourceTree = "<group>"; };
 		31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TeamAnSource+CoreDataProperties.swift"; path = "../TeamAnSource+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		31DE3C121BF07246009BF7CF /* TeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamAndSource.swift; path = ../TeamAndSource.swift; sourceTree = "<group>"; };
 		31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTeamAndSource.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */,
 				313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */,
 				319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */,
+				31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */,
 				31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */,
 				317708901BAE371500435A9A /* ViewController.swift in Sources */,
+				31D2D8481DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift in Sources */,
 				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,

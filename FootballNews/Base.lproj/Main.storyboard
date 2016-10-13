@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Football Updates-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,16 +14,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lzv-xX-kka">
-                                <frame key="frameInset" minX="327" minY="794" width="147" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lzv-xX-kka">
+                                <frame key="frameInset" minX="601" minY="868" width="147" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Quick Select 3" image="PlusIcon.png"/>
                                 <connections>
                                     <action selector="btnAddNewTeamAndSource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ser-fz-Lnc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fde-wH-KHZ">
-                                <frame key="frameInset" minX="166" minY="786" width="182" height="144"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fde-wH-KHZ">
+                                <frame key="frameInset" minX="159" minY="867" width="182" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="10" maxY="0.0"/>
                                 <state key="normal" title="Quick Select 2" image="LiverpoolTeamLogo.png"/>
@@ -31,16 +31,17 @@
                                     <action selector="btnShowLiverpoolUpdates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTe-fH-oeJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C6I-EA-QrW">
-                                <frame key="frameInset" minX="28" minY="785" width="139" height="145"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="C6I-EA-QrW">
+                                <frame key="frameInset" minX="12" minY="866" width="139" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="20" height="10"/>
                                 <state key="normal" title="Quick Select 1" image="ChelseaTeamLogo.png"/>
                                 <connections>
                                     <action selector="btnGotoChelsea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KS-zM-boA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yhG-NR-g2F">
-                                <frame key="frameInset" minX="559" minY="781" width="195" height="144"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yhG-NR-g2F">
+                                <frame key="frameInset" minX="385" minY="440" width="322" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="59" minY="1" maxX="2" maxY="-2"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
@@ -58,22 +59,31 @@
                                     <action selector="setupViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGy-fN-BSz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NXX-IP-Nd7">
-                                <frame key="frameInset" minX="482" minY="796" width="127" height="137"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LiverpoolTeamLogo.png" id="bgW-C6-x2s">
+                                <frame key="frameInset" minY="172" width="390" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xhO-Fj-qnh">
+                                <frame key="frameInset" minX="398" minY="163" width="309" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="View Updates"/>
+                                <connections>
+                                    <segue destination="faK-ZG-JyB" kind="push" id="UHb-JW-sqz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NXX-IP-Nd7">
+                                <frame key="frameInset" minX="466" minY="874" width="127" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="       More" backgroundImage="MoreIcon3.png"/>
                                 <connections>
                                     <action selector="gotoMoreTeamUpdates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reu-Xk-0ne"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenEPL.png" id="bgW-C6-x2s">
-                                <frame key="frameInset" minX="6" minY="65" width="725" height="606"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="hAb-16-F9I"/>
+                    <navigationItem key="navigationItem" title="Football Updates" id="hAb-16-F9I" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
                         <outlet property="ivHomeScreen" destination="bgW-C6-x2s" id="81y-d4-05H"/>
                         <outlet property="vwBackgroundView" destination="8bC-Xf-vdC" id="TV4-wa-T37"/>
@@ -97,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQ6-mq-7oV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-951" y="-2678"/>
+            <point key="canvasLocation" x="-1866" y="-2745"/>
         </scene>
         <!--Setup-->
         <scene sceneID="hTp-cf-9gb">
@@ -186,6 +196,37 @@
             </objects>
             <point key="canvasLocation" x="1472" y="-1537"/>
         </scene>
+        <!--View Team Updates-->
+        <scene sceneID="4rM-m9-n01">
+            <objects>
+                <tableViewController id="faK-ZG-JyB" customClass="ViewTeamUpdatesTeamsViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wbe-LI-sXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mdb-vz-lmH">
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdb-vz-lmH" id="kTq-1a-eCD">
+                                    <frame key="frameInset" width="768" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="faK-ZG-JyB" id="ciH-Zj-Gsq"/>
+                            <outlet property="delegate" destination="faK-ZG-JyB" id="Jgz-CG-PNt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="View Team Updates" id="QGJ-yc-pJq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="aHy-PR-sX9"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Op9-XS-w4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="-1537"/>
+        </scene>
         <!--Manage Accounts-->
         <scene sceneID="qGZ-YF-wvo">
             <objects>
@@ -258,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVh-fz-DYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120" y="-2678"/>
+            <point key="canvasLocation" x="-1035" y="-2745"/>
         </scene>
         <!--Pick a team to View Updates-->
         <scene sceneID="UDO-Mx-S0N">
@@ -325,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tji-gt-761" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-2678"/>
+            <point key="canvasLocation" x="567" y="-2745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PhV-3z-cHu">
@@ -340,6 +381,7 @@
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5gE-l2-n3W">
                         <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </toolbar>
                     <connections>
                         <segue destination="6DV-v1-m4w" kind="relationship" relationship="rootViewController" id="o9t-XR-Ia7"/>
@@ -347,7 +389,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dU-6K-xsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="-2678"/>
+            <point key="canvasLocation" x="-410" y="-2757"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xbL-6A-ueH">
@@ -371,11 +413,28 @@
             </objects>
             <point key="canvasLocation" x="648" y="-1529"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z6q-Ub-99f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5tV-xF-WGI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3G-FH-t3c">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="faK-ZG-JyB" kind="relationship" relationship="rootViewController" id="KnI-Kf-Jam"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-8e-24Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3155" y="-2866"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ChelseaTeamLogo.png" width="768" height="768"/>
         <image name="HomeIcon2.png" width="256" height="256"/>
-        <image name="LaunchScreenEPL.png" width="1532" height="1196"/>
         <image name="LiverpoolTeamLogo.png" width="500" height="500"/>
         <image name="ManageAccountsIcon.png" width="350" height="350"/>
         <image name="ManageTeamsIcon2.png" width="512" height="512"/>
@@ -391,4 +450,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="UHb-JW-sqz"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
