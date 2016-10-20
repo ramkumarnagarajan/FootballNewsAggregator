@@ -18,6 +18,8 @@ class ManageAccountsViewController: UIViewController {
         btnHome.isHidden = true
         vwBackgroundView.layer.borderWidth = 1
         vwBackgroundView.layer.borderColor = UIColor.blue.cgColor
+        let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
+        self.view?.backgroundColor = viewBackGroundColor
         // Do any additional setup after loading the view.
     }
 

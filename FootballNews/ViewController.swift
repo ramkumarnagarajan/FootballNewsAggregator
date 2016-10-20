@@ -19,9 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let backgroundColor = UIColor(red:0,green:172/256,blue:237/256,alpha:1)
-        navigationController?.navigationBar.barTintColor = backgroundColor
+        let navBarBackgroundColor = UIColor(red:0,green:172/256,blue:237/256,alpha:1)
+        navigationController?.navigationBar.barTintColor = navBarBackgroundColor
         navigationController?.navigationBar.backItem?.backBarButtonItem?.tintColor = UIColor.white
+        let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
+        self.view?.backgroundColor = viewBackGroundColor
     }
 
     @IBAction func btnShowLiverpoolUpdates(_ sender: AnyObject) {
@@ -91,7 +93,7 @@ class ViewController: UIViewController {
             
             //need to refresh the table, insert the new team into the table
             alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-            alert = UIAlertController(title: "Saved Successfully ", message: "Save Did  Completed Successfully..", preferredStyle: UIAlertControllerStyle.alert)
+            alert = UIAlertController(title: "Saved Successfully ", message: teamName!+" -> Save Completed Successfully..", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(alertSaveButton)
             
         }
@@ -99,7 +101,7 @@ class ViewController: UIViewController {
         {
             //show alert with error
             alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-            alert = UIAlertController(title: "Save Failed", message: "Save Did Not Complete Successfully..", preferredStyle: UIAlertControllerStyle.alert)
+            alert = UIAlertController(title: "Save Failed", message: "Save Errored..", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(alertSaveButton)
             
         }
@@ -124,6 +126,13 @@ class ViewController: UIViewController {
         if(teamList.isEmpty)
         {
             print("ViewController.swift -> gotoMoreTeamUpdates -> first Team is empty..")
+            //show alert with error
+            var alert = UIAlertController()
+            var alertSaveButton = UIAlertAction()
+
+            alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alert = UIAlertController(title: "No Teams added", message: "No Team has been successfully added yet..Please add a team before viewing the updates..", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(alertSaveButton)
         }
         else
         {
@@ -136,11 +145,11 @@ class ViewController: UIViewController {
             {
                 Team.selectedSource = (firstTeam?.sourceURL)!
                 print("ViewController.swift -> gotoMoreTeamUpdates -> first Team URL is " + (firstTeam?.sourceURL)!)
+                teamList.removeAll()
+                teamListVC = storyBoard.instantiateViewController(withIdentifier: "TeamListViewController") as! TeamListViewController;
+                self.navigationController?.pushViewController(teamListVC, animated: true)
             }
         }
-        teamList.removeAll()
-        teamListVC = storyBoard.instantiateViewController(withIdentifier: "TeamListViewController") as! TeamListViewController;
-        self.navigationController?.pushViewController(teamListVC, animated: true)
         
     
     }

@@ -92,7 +92,8 @@ class TeamListViewController: UIViewController,UIPickerViewDelegate {
         super.viewDidLoad()
         btnGoHome.isHidden=true
         pickerSource = Team().getStoredObjects("")
-        
+        let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
+        self.view?.backgroundColor = viewBackGroundColor
         loadURLToWebView()
         
         // Do any additional setup after loading the view.

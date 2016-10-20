@@ -40,34 +40,45 @@
                                     <action selector="btnGotoChelsea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KS-zM-boA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yhG-NR-g2F">
-                                <frame key="frameInset" minX="385" minY="440" width="322" height="144"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="yhG-NR-g2F">
+                                <frame key="frameInset" minX="404" minY="463" width="249" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="59" minY="1" maxX="2" maxY="-2"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" image="settings icon 3.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Setup">
-                                            <attributes>
-                                                <font key="NSFont" size="16" name=".HelveticaNeueDeskInterface-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="Setup">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="setupViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGy-fN-BSz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LiverpoolTeamLogo.png" id="bgW-C6-x2s">
-                                <frame key="frameInset" minY="172" width="390" height="470"/>
+                                <frame key="frameInset" minX="20" minY="125" width="349" height="538"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xhO-Fj-qnh">
-                                <frame key="frameInset" minX="398" minY="163" width="309" height="129"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xhO-Fj-qnh">
+                                <frame key="frameInset" minX="404" minY="138" width="249" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="View Updates"/>
+                                <state key="normal" title="View Updates">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="faK-ZG-JyB" kind="push" id="UHb-JW-sqz"/>
                                 </connections>
@@ -80,8 +91,22 @@
                                     <action selector="gotoMoreTeamUpdates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reu-Xk-0ne"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z81-QH-fMa">
+                                <frame key="frameInset" minX="405" minY="288" width="249" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="7.9719387755102034e-05" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Help ?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Football Updates" id="hAb-16-F9I" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
@@ -331,8 +356,8 @@
                                     <outlet property="delegate" destination="6DV-v1-m4w" id="FoZ-VW-XXk"/>
                                 </connections>
                             </pickerView>
-                            <webView contentMode="scaleToFill" id="lPd-L2-Ung">
-                                <frame key="frameInset" minX="63" minY="124" width="642" height="658"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" id="lPd-L2-Ung">
+                                <frame key="frameInset" minY="68" width="768" height="713"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -389,7 +414,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dU-6K-xsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="-2757"/>
+            <point key="canvasLocation" x="-212" y="-2898"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xbL-6A-ueH">
@@ -442,7 +467,6 @@
         <image name="PlusIcon.png" width="256" height="256"/>
         <image name="facebook_login.png" width="585" height="80"/>
         <image name="facebook_logo.png" width="600" height="600"/>
-        <image name="settings icon 3.png" width="264" height="262"/>
         <image name="twitter_logo.png" width="1250" height="1250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -453,5 +477,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="UHb-JW-sqz"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

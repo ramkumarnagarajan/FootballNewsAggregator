@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317708941BAE371500435A9A /* FootballNews.xcdatamodeld */; };
 		317708981BAE371500435A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317708971BAE371500435A9A /* Assets.xcassets */; };
 		3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708991BAE371500435A9A /* LaunchScreen.storyboard */; };
+		319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 319B90541DB808A800D1E8B9 /* LaunchScreen.png */; };
 		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
 		319FD0381BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */; };
 		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
@@ -66,6 +67,7 @@
 		317708971BAE371500435A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3177089A1BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3177089C1BAE371500435A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319B90541DB808A800D1E8B9 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				319B90541DB808A800D1E8B9 /* LaunchScreen.png */,
 				315379841C1408730010F544 /* BluePlusIcon.png */,
 				313A07DC1BB9086400889396 /* HomeIcon.png */,
 				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
@@ -214,7 +217,7 @@
 				};
 			};
 			buildConfigurationList = 317708851BAE371500435A9A /* Build configuration list for PBXProject "FootballNews" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -238,6 +241,7 @@
 			files = (
 				313A07E11BB9176800889396 /* settings icon 2.png in Resources */,
 				313A07DE1BB9086400889396 /* HomeIcon.png in Resources */,
+				319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */,
 				314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */,
 				3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */,
 				314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */,
@@ -342,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -383,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

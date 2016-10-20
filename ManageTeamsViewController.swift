@@ -29,7 +29,8 @@ class ManageTeamsViewController: UITableViewController {
         let buttons : NSArray = [addTeamButton,self.editButtonItem]
         
         self.navigationItem.rightBarButtonItems = (buttons as! [UIBarButtonItem])
-        
+        let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
+        self.view?.backgroundColor = viewBackGroundColor
     }
     
     

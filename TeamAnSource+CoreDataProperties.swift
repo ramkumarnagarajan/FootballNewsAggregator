@@ -17,5 +17,4 @@ extension TeamAndSource {
     @NSManaged var teamName: String?
     @NSManaged var urlName: String?
     @NSManaged var sourceURL: String?
-
 }

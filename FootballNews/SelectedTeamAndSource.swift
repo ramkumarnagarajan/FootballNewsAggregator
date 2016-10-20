@@ -16,6 +16,7 @@ class Team{
     var sourceName:String = ""
     var sourceURL : String = ""
     open static var selectedSource:String=""
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
     
     func convertMatchingEntityToTeamAndSourceEntity(_ matchingEntity:NSManagedObject) -> Team
     {
@@ -32,11 +33,10 @@ class Team{
     func deleteEntity(_ sourceURL:String) ->Bool
     {
         var isDataDeleted = false
-        let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
         if(!getStoredObjects(sourceURL).isEmpty)
         {
             print("Data Exists -> proceeding to Delete")
-            let myEntity = try! NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
+            let myEntity = NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
             //Code to delete the EntityObject goes here
             let request = NSFetchRequest <TeamAndSource>(entityName:"TeamAndSource")
             request.entity = myEntity
@@ -71,7 +71,7 @@ class Team{
     func saveData(_ teamName:String, sourceName:String, sourceURL:String) ->Bool
     {
         var isDataSaved = false;
-        let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
+        
         print("Inside ManageTeamsViewController.saveData")
         if(teamName.isEmpty)
         {
@@ -96,7 +96,7 @@ class Team{
         }
         
         //Else, proceed to save.
-        let myEntity = try! NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
+        let myEntity =  NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
         let TandS = TeamAndSource(entity:myEntity!,insertInto: managedObjectContext)
         TandS.urlName = sourceName
         TandS.sourceURL = sourceURL
@@ -119,10 +119,9 @@ class Team{
     func getStoredObjects(_ sourceURL:String) -> [Team]
     {
         var matchingEntities : [NSManagedObject] = []
-        let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
         var matchingTeamsAndSources:[Team] = []
         print("Inside Team.getStoredObjects ")
-        let myEntity = try! NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
+        let myEntity = NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
         let sortDescriptor = NSSortDescriptor(key: "teamName",ascending:false)
         let sortDescriptors = [sortDescriptor]
         
