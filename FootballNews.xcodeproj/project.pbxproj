@@ -125,9 +125,17 @@
 			path = FootballNews;
 			sourceTree = "<group>";
 		};
+		3191E64C1DB88AE7001CF4B9 /* SlideOutViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SlideOutViewController;
+			sourceTree = "<group>";
+		};
 		319FD0391BC10AC200801B31 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3191E64C1DB88AE7001CF4B9 /* SlideOutViewController */,
 				3177088F1BAE371500435A9A /* ViewController.swift */,
 				31AD77911BAE768000F77E48 /* SetupViewController.swift */,
 				313A07DA1BB8ED7200889396 /* TeamListViewController.swift */,
