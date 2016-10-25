@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31026D721C0AB4CC00DBF415 /* PlusIcon.png */; };
-		313A07D11BB8C1C100889396 /* ManageAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */; };
+		3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */; };
 		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
-		313A07DB1BB8ED7200889396 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A07DA1BB8ED7200889396 /* TeamListViewController.swift */; };
 		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
 		313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DD1BB9086400889396 /* HomeIcon2.png */; };
 		313A07E11BB9176800889396 /* settings icon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E01BB9176800889396 /* settings icon 2.png */; };
@@ -19,18 +18,18 @@
 		313A07E71BB91CDA00889396 /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E61BB91CDA00889396 /* facebook_login.png */; };
 		313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E81BB91D8000889396 /* facebook_logo.png */; };
 		313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E91BB91D8000889396 /* twitter_logo.png */; };
+		314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */; };
 		314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */; };
 		314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */; };
 		315379851C1408730010F544 /* BluePlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 315379841C1408730010F544 /* BluePlusIcon.png */; };
 		3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088D1BAE371500435A9A /* AppDelegate.swift */; };
-		317708901BAE371500435A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088F1BAE371500435A9A /* ViewController.swift */; };
 		317708931BAE371500435A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708911BAE371500435A9A /* Main.storyboard */; };
 		317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317708941BAE371500435A9A /* FootballNews.xcdatamodeld */; };
 		317708981BAE371500435A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317708971BAE371500435A9A /* Assets.xcassets */; };
 		3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708991BAE371500435A9A /* LaunchScreen.storyboard */; };
+		3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3189091E1DBD9945004B7184 /* SWRevealViewController.m */; };
 		319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 319B90541DB808A800D1E8B9 /* LaunchScreen.png */; };
 		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
-		319FD0381BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */; };
 		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
 		31AD779B1BAE7E5500F77E48 /* LaunchScreenTrophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */; };
 		31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */; };
@@ -45,9 +44,8 @@
 
 /* Begin PBXFileReference section */
 		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
-		313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageAccountsViewController.swift; sourceTree = "<group>"; };
+		3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
-		313A07DA1BB8ED7200889396 /* TeamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
 		313A07DD1BB9086400889396 /* HomeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon2.png; sourceTree = "<group>"; };
 		313A07E01BB9176800889396 /* settings icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings icon 2.png"; sourceTree = "<group>"; };
@@ -56,20 +54,22 @@
 		313A07E61BB91CDA00889396 /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
 		313A07E81BB91D8000889396 /* facebook_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_logo.png; sourceTree = "<group>"; };
 		313A07E91BB91D8000889396 /* twitter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo.png; sourceTree = "<group>"; };
+		314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamUpdatesViewController.swift; sourceTree = "<group>"; };
 		314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageAccountsIcon.png; sourceTree = "<group>"; };
 		314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageTeamsIcon2.png; sourceTree = "<group>"; };
 		315379841C1408730010F544 /* BluePlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePlusIcon.png; sourceTree = "<group>"; };
 		3177088A1BAE371500435A9A /* FootballNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3177088D1BAE371500435A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3177088F1BAE371500435A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		317708921BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		317708951BAE371500435A9A /* FootballNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballNews.xcdatamodel; sourceTree = "<group>"; };
 		317708971BAE371500435A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3177089A1BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3177089C1BAE371500435A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3189091C1DBD9944004B7184 /* FootballNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootballNews-Bridging-Header.h"; sourceTree = "<group>"; };
+		3189091D1DBD9945004B7184 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		3189091E1DBD9945004B7184 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		319B90541DB808A800D1E8B9 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
-		319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenTrophy.png; sourceTree = "<group>"; };
 		31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenEPL.png; sourceTree = "<group>"; };
@@ -112,6 +112,7 @@
 		3177088C1BAE371500435A9A /* FootballNews */ = {
 			isa = PBXGroup;
 			children = (
+				3189091B1DBD990F004B7184 /* SWRevealViewController */,
 				31DE3C151BF07262009BF7CF /* CoreDataModel */,
 				319FD0391BC10AC200801B31 /* ViewControllers */,
 				31AD77971BAE7ABF00F77E48 /* Assets */,
@@ -125,24 +126,24 @@
 			path = FootballNews;
 			sourceTree = "<group>";
 		};
-		3191E64C1DB88AE7001CF4B9 /* SlideOutViewController */ = {
+		3189091B1DBD990F004B7184 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3189091D1DBD9945004B7184 /* SWRevealViewController.h */,
+				3189091E1DBD9945004B7184 /* SWRevealViewController.m */,
+				3189091C1DBD9944004B7184 /* FootballNews-Bridging-Header.h */,
 			);
-			name = SlideOutViewController;
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		319FD0391BC10AC200801B31 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3191E64C1DB88AE7001CF4B9 /* SlideOutViewController */,
-				3177088F1BAE371500435A9A /* ViewController.swift */,
 				31AD77911BAE768000F77E48 /* SetupViewController.swift */,
-				313A07DA1BB8ED7200889396 /* TeamListViewController.swift */,
 				319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */,
-				313A07D01BB8C1C100889396 /* ManageAccountsViewController.swift */,
-				319FD0371BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift */,
 				31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */,
+				3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */,
+				314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -279,17 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */,
+				3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */,
 				31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */,
-				313A07D11BB8C1C100889396 /* ManageAccountsViewController.swift in Sources */,
 				31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */,
 				31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */,
-				317708901BAE371500435A9A /* ViewController.swift in Sources */,
+				314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */,
 				31D2D8481DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift in Sources */,
 				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
-				319FD0381BC10AB600801B31 /* CreditsViewControllerCollectionViewController.swift in Sources */,
-				313A07DB1BB8ED7200889396 /* TeamListViewController.swift in Sources */,
 				31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FootballNews/Info.plist;
@@ -416,6 +417,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootballNews/FootballNews-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FootballNews/Info.plist;
@@ -432,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootballNews/FootballNews-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

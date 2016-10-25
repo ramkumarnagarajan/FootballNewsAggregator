@@ -38,23 +38,4 @@ class SetupViewController : UIViewController
         //tlVC.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationController?.pushViewController(tlVC, animated: true)
     }
-    
-    @IBAction func ManageAccounts(_ sender: AnyObject) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        var maVC = ManageAccountsViewController();
-        maVC = storyBoard.instantiateViewController(withIdentifier: "ManageAccountsViewController") as! ManageAccountsViewController
-        //maVC.navigationItem.setHidesBackButton(true, animated: true)
-        self.navigationController?.pushViewController(maVC, animated: true)
-        
-    }
-    
-    @IBAction func gotoHomeScreen(_ sender: AnyObject) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        var homeVC = ViewController()
-        homeVC = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! ViewController
-        //homeVC.navigationItem.setHidesBackButton(true, animated: true)
-        self.navigationController?.pushViewController(homeVC, animated: true)
-    
-    }
-    
 }

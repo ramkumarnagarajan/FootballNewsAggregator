@@ -1,213 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="Xcu-Vo-O9c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="MW6-iN-sBX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Football Updates-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lzv-xX-kka">
-                                <frame key="frameInset" minX="601" minY="868" width="147" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Quick Select 3" image="PlusIcon.png"/>
-                                <connections>
-                                    <action selector="btnAddNewTeamAndSource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ser-fz-Lnc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fde-wH-KHZ">
-                                <frame key="frameInset" minX="159" minY="867" width="182" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="10" maxY="0.0"/>
-                                <state key="normal" title="Quick Select 2" image="LiverpoolTeamLogo.png"/>
-                                <connections>
-                                    <action selector="btnShowLiverpoolUpdates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTe-fH-oeJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="C6I-EA-QrW">
-                                <frame key="frameInset" minX="12" minY="866" width="139" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <size key="titleShadowOffset" width="20" height="10"/>
-                                <state key="normal" title="Quick Select 1" image="ChelseaTeamLogo.png"/>
-                                <connections>
-                                    <action selector="btnGotoChelsea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6KS-zM-boA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="yhG-NR-g2F">
-                                <frame key="frameInset" minX="404" minY="463" width="249" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="59" minY="1" maxX="2" maxY="-2"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Setup">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="setupViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGy-fN-BSz"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LiverpoolTeamLogo.png" id="bgW-C6-x2s">
-                                <frame key="frameInset" minX="20" minY="125" width="349" height="538"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xhO-Fj-qnh">
-                                <frame key="frameInset" minX="404" minY="138" width="249" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="View Updates">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="faK-ZG-JyB" kind="push" id="UHb-JW-sqz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NXX-IP-Nd7">
-                                <frame key="frameInset" minX="466" minY="874" width="127" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="       More" backgroundImage="MoreIcon3.png"/>
-                                <connections>
-                                    <action selector="gotoMoreTeamUpdates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reu-Xk-0ne"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z81-QH-fMa">
-                                <frame key="frameInset" minX="405" minY="288" width="249" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="7.9719387755102034e-05" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Help ?">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Football Updates" id="hAb-16-F9I" colorLabel="IBBuiltInLabel-Blue"/>
-                    <connections>
-                        <outlet property="ivHomeScreen" destination="bgW-C6-x2s" id="81y-d4-05H"/>
-                        <outlet property="vwBackgroundView" destination="8bC-Xf-vdC" id="TV4-wa-T37"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-973" y="-1529"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1Z4-ec-gdz">
-            <objects>
-                <navigationController id="Xcu-Vo-O9c" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PMl-8B-ts8">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mn3-wR-DB4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iQ6-mq-7oV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1866" y="-2745"/>
-        </scene>
-        <!--Setup-->
-        <scene sceneID="hTp-cf-9gb">
-            <objects>
-                <viewController storyboardIdentifier="SetupViewController" id="eXq-Rc-8n2" customClass="SetupViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0IP-jL-Y4e">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zej-mO-9WD">
-                                <frame key="frameInset" minX="76" minY="133" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="sEo-HG-rR2">
-                                <frame key="frameInset" minX="250" minY="82" width="269" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <size key="titleShadowOffset" width="0.0" height="5"/>
-                                <state key="normal" backgroundImage="ManageAccountsIcon.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ManageAccounts:" destination="eXq-Rc-8n2" eventType="touchUpInside" id="VCZ-no-W7h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Axx-V2-7pm">
-                                <frame key="frameInset" minX="250" minY="478" width="269" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.97335746759999997" blue="0.23227269040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="1"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="7" maxX="0.0" maxY="-1"/>
-                                <state key="normal" backgroundImage="ManageTeamsIcon2.png"/>
-                                <connections>
-                                    <action selector="gotoManageTeams:" destination="eXq-Rc-8n2" eventType="touchUpInside" id="NdE-0f-ZKV"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Facebook And Twitter Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nHp-N5-SdQ">
-                                <frame key="frameInset" minX="230" minY="377" width="309" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XF7-vY-6rG">
-                                <frame key="frameInset" minX="680" minY="564" width="76" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Home" backgroundImage="HomeIcon2.png"/>
-                                <connections>
-                                    <action selector="gotoHomeScreen:" destination="eXq-Rc-8n2" eventType="touchUpInside" id="ZEm-OS-NOF"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Teams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6EB-Qb-HS6">
-                                <frame key="frameInset" minX="305" minY="768" width="158" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Setup" id="4R8-Wk-0fC">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="HQh-bu-gDT"/>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <connections>
-                        <outlet property="btnHome" destination="XF7-vY-6rG" id="ZdD-oi-pE2"/>
-                        <outlet property="vwBackgroundView" destination="0IP-jL-Y4e" id="rBg-J9-9IO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oy6-Av-BaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-163" y="-1529"/>
-        </scene>
         <!--Manage Teams and Feeds-->
         <scene sceneID="cac-AD-5M4">
             <objects>
@@ -219,255 +17,173 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7a-Hu-AIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1472" y="-1537"/>
+            <point key="canvasLocation" x="-1779" y="-3555"/>
         </scene>
-        <!--View Team Updates-->
-        <scene sceneID="4rM-m9-n01">
+        <!--Reveal View Controller-->
+        <scene sceneID="ch4-ew-Xgg">
             <objects>
-                <tableViewController id="faK-ZG-JyB" customClass="ViewTeamUpdatesTeamsViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wbe-LI-sXJ">
+                <viewController id="MW6-iN-sBX" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDf-Ws-Zf3">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mdb-vz-lmH">
-                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdb-vz-lmH" id="kTq-1a-eCD">
-                                    <frame key="frameInset" width="768" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="faK-ZG-JyB" id="ciH-Zj-Gsq"/>
-                            <outlet property="delegate" destination="faK-ZG-JyB" id="Jgz-CG-PNt"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="View Team Updates" id="QGJ-yc-pJq">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="aHy-PR-sX9"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Op9-XS-w4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2346" y="-1537"/>
-        </scene>
-        <!--Manage Accounts-->
-        <scene sceneID="qGZ-YF-wvo">
-            <objects>
-                <viewController storyboardIdentifier="ManageAccountsViewController" id="kXM-Vg-zyU" customClass="ManageAccountsViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oNw-Si-ns5">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zp3-GT-4KS">
-                                <frame key="frameInset" minX="565" minY="241" width="203" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home" backgroundImage="HomeIcon2.png"/>
-                                <connections>
-                                    <action selector="gotoHomeScreen:" destination="kXM-Vg-zyU" eventType="touchUpInside" id="WaL-aR-VQ1"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_logo.png" id="cZe-bs-bhJ">
-                                <frame key="frameInset" minX="25" minY="138" width="178" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username / email address" minimumFontSize="17" id="xoh-MX-y1d">
-                                <frame key="frameInset" minX="265" minY="172" width="268" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="whileEditing" id="zeK-1Q-qQ8">
-                                <frame key="frameInset" minX="265" minY="218" width="268" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P0w-tu-8HB">
-                                <frame key="frameInset" minX="224" minY="251" width="351" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="facebook_login.png"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter_logo.png" id="NT8-kc-29Y">
-                                <frame key="frameInset" minX="25" minY="407" width="179" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username / email address" minimumFontSize="17" id="NFa-Ev-rnF">
-                                <frame key="frameInset" minX="265" minY="426" width="268" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="whileEditing" id="lA6-hS-fC7">
-                                <frame key="frameInset" minX="265" minY="476" width="268" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="McU-fO-08O">
-                                <frame key="frameInset" minX="224" minY="514" width="351" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="facebook_login.png"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Manage Accounts" id="hPy-g4-mv5">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="AA6-uT-mc8"/>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="btnHome" destination="zp3-GT-4KS" id="88Y-iP-YvT"/>
-                        <outlet property="vwBackgroundView" destination="oNw-Si-ns5" id="GT7-sn-oyT"/>
+                        <segue destination="hXk-2w-la5" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="cYT-Al-DWv"/>
+                        <segue destination="CeM-sR-XRI" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Vqf-KU-I4C"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IVh-fz-DYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoW-hk-4Uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1035" y="-2745"/>
+            <point key="canvasLocation" x="-2747" y="-1395"/>
         </scene>
-        <!--Pick a team to View Updates-->
-        <scene sceneID="UDO-Mx-S0N">
+        <!--Slide Menu View Controller-->
+        <scene sceneID="dN7-hM-sBp">
             <objects>
-                <viewController storyboardIdentifier="TeamListViewController" id="6DV-v1-m4w" customClass="TeamListViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="339-r7-rpT">
+                <tableViewController id="hXk-2w-la5" customClass="SlideMenuViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ojr-pr-lbf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Settings And Preferences" id="Ngy-Wz-wsj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="61" id="SEW-7o-fie">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="61"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SEW-7o-fie" id="scG-7J-3SB">
+                                            <frame key="frameInset" width="768" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manage Teams And  Sources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xIA-1x-8AJ">
+                                                    <frame key="frameInset" minX="28" minY="-6" width="377" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="7.9719387759999999e-05" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="44" id="gt8-go-OQl">
+                                        <rect key="frame" x="0.0" y="89" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gt8-go-OQl" id="2OP-NU-uEf">
+                                            <frame key="frameInset" width="768" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manage User Logins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FFo-eC-2dE">
+                                                    <frame key="frameInset" minX="27" minY="5" width="378" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0059650405089999997" green="0.64193723719999995" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" rowHeight="57" id="dnf-ug-niK">
+                                        <rect key="frame" x="0.0" y="133" width="768" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnf-ug-niK" id="FqQ-R6-69U">
+                                            <frame key="frameInset" width="768" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Developer Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="817-Qv-gEO">
+                                                    <frame key="frameInset" minX="28" minY="-10" width="385" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hXk-2w-la5" id="0wB-xr-e4I"/>
+                            <outlet property="delegate" destination="hXk-2w-la5" id="J24-iJ-CMz"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="CeM-sR-XRI" kind="custom" identifier="segueToMenu" customClass="SWRevealViewControllerSeguePushController" id="pCJ-tl-gYe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJL-rJ-SFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1493" y="-2160"/>
+        </scene>
+        <!--Football Updates-->
+        <scene sceneID="wdq-w9-e5N">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="960-BB-RbQ" customClass="TeamUpdatesViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ak5-4D-2fU">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g7f-t9-5W3">
-                                <frame key="frameInset" minX="92" minY="78" width="53" height="31"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tx2-zr-cCr">
+                                <frame key="frameInset" minY="65" width="768" height="959"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home" backgroundImage="HomeIcon2.png"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellMain" id="sgk-Pr-QGu">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgk-Pr-QGu" id="ONT-VO-KL9">
+                                            <frame key="frameInset" width="768" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="goHome:" destination="6DV-v1-m4w" eventType="touchUpInside" id="64z-1g-v3S"/>
+                                    <outlet property="dataSource" destination="960-BB-RbQ" id="0F2-h0-pri"/>
+                                    <outlet property="delegate" destination="960-BB-RbQ" id="gaY-0Z-TsE"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nHZ-Fv-2o0">
-                                <frame key="frameInset" minX="63" minY="779" width="225" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" id="2hU-ZT-nbn">
-                                <frame key="frameInset" minX="75" minY="826" height="150" maxX="51"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="6DV-v1-m4w" id="FoZ-VW-XXk"/>
-                                </connections>
-                            </pickerView>
-                            <webView contentMode="scaleToFill" misplaced="YES" id="lPd-L2-Ung">
-                                <frame key="frameInset" minY="68" width="768" height="713"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </webView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="02r-tx-Qr6">
-                                <frame key="frameInset" minX="239" minY="95" width="290" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CXP-TU-kpd">
-                                <frame key="frameInset" minX="502" minY="797" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.67450980390000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Pick a team to View Updates" id="RO6-pt-K7q">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="NnY-Vk-bdG"/>
+                    <navigationItem key="navigationItem" title="Football Updates" id="B5j-Fm-nvX">
+                        <barButtonItem key="leftBarButtonItem" image="BluePlusIcon.png" id="WyN-JX-9iK">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="btnGoHome" destination="g7f-t9-5W3" id="w2r-RS-Y6G"/>
-                        <outlet property="myWebView" destination="lPd-L2-Ung" id="Y1b-Jr-RhG"/>
-                        <outlet property="vwBackgroundView" destination="339-r7-rpT" id="TSj-ae-2Dh"/>
+                        <outlet property="menuButton" destination="WyN-JX-9iK" id="E2D-8b-JNj"/>
+                        <outlet property="tableView" destination="Tx2-zr-cCr" id="7hw-TE-4CG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tji-gt-761" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHk-XI-zJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="-2745"/>
+            <point key="canvasLocation" x="-513" y="-886"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="PhV-3z-cHu">
+        <scene sceneID="XnC-I4-iTT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="fjY-dn-3lh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CeM-sR-XRI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zgy-pe-YNR">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5gE-l2-n3W">
-                        <rect key="frame" x="0.0" y="980" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="6DV-v1-m4w" kind="relationship" relationship="rootViewController" id="o9t-XR-Ia7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5dU-6K-xsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-212" y="-2898"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xbL-6A-ueH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FpV-ee-F29" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gXl-ob-Nct">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="U4e-iE-PsP">
-                        <rect key="frame" x="0.0" y="980" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="aPk-Zx-42e" kind="relationship" relationship="rootViewController" id="tp9-g7-Kq2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fjR-Z6-ynp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="648" y="-1529"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="z6q-Ub-99f">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5tV-xF-WGI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3G-FH-t3c">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2Y-hM-i1T">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="faK-ZG-JyB" kind="relationship" relationship="rootViewController" id="KnI-Kf-Jam"/>
+                        <segue destination="960-BB-RbQ" kind="relationship" relationship="rootViewController" id="Bms-Ye-J0v"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-8e-24Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSR-nj-qAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3155" y="-2866"/>
+            <point key="canvasLocation" x="-1493" y="-886"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ChelseaTeamLogo.png" width="768" height="768"/>
-        <image name="HomeIcon2.png" width="256" height="256"/>
-        <image name="LiverpoolTeamLogo.png" width="500" height="500"/>
-        <image name="ManageAccountsIcon.png" width="350" height="350"/>
-        <image name="ManageTeamsIcon2.png" width="512" height="512"/>
-        <image name="MoreIcon3.png" width="204" height="204"/>
-        <image name="PlusIcon.png" width="256" height="256"/>
-        <image name="facebook_login.png" width="585" height="80"/>
-        <image name="facebook_logo.png" width="600" height="600"/>
-        <image name="twitter_logo.png" width="1250" height="1250"/>
+        <image name="BluePlusIcon.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -475,7 +191,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="UHb-JW-sqz"/>
+        <segue reference="pCJ-tl-gYe"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
