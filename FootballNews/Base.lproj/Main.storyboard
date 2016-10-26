@@ -54,7 +54,7 @@
                                 <frame key="frameInset" minX="528" minY="541" width="240" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UnI-0g-u5l" id="bQc-iW-I4V">
-                                    <frame key="frameInset" width="240" height="64"/>
+                                    <frame key="frameInset" width="240" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Github Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8li-V2-ylH">
@@ -85,8 +85,8 @@
                         <color key="backgroundColor" red="0.54117647058823526" green="0.54509803921568623" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Developer Credits" id="Zaw-le-4Cq">
-                        <barButtonItem key="leftBarButtonItem" image="back 21.png" id="N8B-jh-9eN">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="N8B-jh-9eN">
+                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="960-BB-RbQ" kind="push" id="GML-G7-A0y"/>
                             </connections>
@@ -103,8 +103,8 @@
                 <tableViewController storyboardIdentifier="ManageTeamsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aPk-Zx-42e" customClass="ManageTeamsViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Manage Teams and Feeds" id="S9G-hv-5C3">
-                        <barButtonItem key="leftBarButtonItem" image="back 21.png" id="GVb-eg-XLQ">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="GVb-eg-XLQ">
+                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="960-BB-RbQ" kind="push" id="jRy-V9-qBg"/>
                             </connections>
@@ -170,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="89" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gt8-go-OQl" id="2OP-NU-uEf">
-                                            <frame key="frameInset" width="702" height="43"/>
+                                            <frame key="frameInset" width="730" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manage User Logins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FFo-eC-2dE">
@@ -221,7 +221,7 @@
             </objects>
             <point key="canvasLocation" x="-1822" y="-2011"/>
         </scene>
-        <!--Football Updates-->
+        <!--FOOTBALL UPDATES HOME-->
         <scene sceneID="wdq-w9-e5N">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="960-BB-RbQ" customClass="TeamUpdatesViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -252,8 +252,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Football Updates" id="B5j-Fm-nvX">
-                        <barButtonItem key="leftBarButtonItem" image="BluePlusIcon.png" id="WyN-JX-9iK">
+                    <navigationItem key="navigationItem" title="FOOTBALL UPDATES HOME" id="B5j-Fm-nvX">
+                        <barButtonItem key="leftBarButtonItem" image="Menu-48.png" id="WyN-JX-9iK">
                             <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -283,7 +283,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Updates For ...." id="3Ge-DH-cJ8">
-                        <barButtonItem key="leftBarButtonItem" image="back 21.png" id="Pqu-PP-RkS">
+                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Pqu-PP-RkS">
                             <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="960-BB-RbQ" kind="push" id="i1T-SC-7xe"/>
@@ -305,7 +305,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="23"/>
                             <color key="textColor" red="0.44705882352941173" green="0.51764705882352935" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="-15" vertical="0.0"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -326,8 +328,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bA-19-Fce">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.10980392156862745" green="0.11372549019607843" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="23"/>
                             <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -349,8 +351,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wb8-hE-A61">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="23"/>
+                            <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -369,6 +373,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ry-vW-AaB">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -381,10 +388,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BluePlusIcon.png" width="30" height="30"/>
+        <image name="Menu-48.png" width="48" height="48"/>
         <image name="Ninja Head-48.png" width="48" height="48"/>
+        <image name="Previous-48.png" width="48" height="48"/>
         <image name="Spider-Man Head-48.png" width="48" height="48"/>
-        <image name="back 21.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -393,7 +400,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="pCJ-tl-gYe"/>
-        <segue reference="GML-G7-A0y"/>
+        <segue reference="Bms-Ye-J0v"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

@@ -15,6 +15,7 @@ class ManageTeamsViewController: UITableViewController {
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
+    let tableCellTextColor = UIColor(red: 138/256, green: 139/256, blue: 142/256, alpha: 1)
     
     //Class Variables
     var txtTeamName:UITextField = UITextField()
@@ -161,12 +162,16 @@ class ManageTeamsViewController: UITableViewController {
         let teams : [Team] = Team().getStoredObjects("")
         let cell = UITableViewCell()
         cell.backgroundColor=bodyBackgroundColor
-        cell.textLabel?.textColor=UIColor.white
+        cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
+        cell.textLabel?.textColor = tableCellTextColor
         // Configure the cell...
         cell.textLabel?.text="No Teams Found..Please add few.."
         if(!teams.isEmpty && teams.count>0)
         {
-            cell.textLabel?.text = teams[(indexPath as NSIndexPath).item].teamName
+            let strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
+            let strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
+            
+            cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
         }
         return cell
     }

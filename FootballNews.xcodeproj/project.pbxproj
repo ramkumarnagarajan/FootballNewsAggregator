@@ -46,6 +46,13 @@
 		31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */; };
 		31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C121BF07246009BF7CF /* TeamAndSource.swift */; };
 		31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */; };
+		31F73B3E1DC111880045CC1F /* Menu-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B3D1DC111880045CC1F /* Menu-48.png */; };
+		31F73B421DC11A8B0045CC1F /* Previous-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B411DC11A8B0045CC1F /* Previous-48.png */; };
+		31F73B531DC121000045CC1F /* RussoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B521DC121000045CC1F /* RussoOne-Regular.ttf */; };
+		31F73B581DC121100045CC1F /* Cousine-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B541DC121100045CC1F /* Cousine-Bold.ttf */; };
+		31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B551DC121100045CC1F /* Cousine-BoldItalic.ttf */; };
+		31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B561DC121100045CC1F /* Cousine-Italic.ttf */; };
+		31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B571DC121100045CC1F /* Cousine-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +99,13 @@
 		31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TeamAnSource+CoreDataProperties.swift"; path = "../TeamAnSource+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		31DE3C121BF07246009BF7CF /* TeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamAndSource.swift; path = ../TeamAndSource.swift; sourceTree = "<group>"; };
 		31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTeamAndSource.swift; sourceTree = "<group>"; };
+		31F73B3D1DC111880045CC1F /* Menu-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-48.png"; sourceTree = "<group>"; };
+		31F73B411DC11A8B0045CC1F /* Previous-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Previous-48.png"; sourceTree = "<group>"; };
+		31F73B521DC121000045CC1F /* RussoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RussoOne-Regular.ttf"; sourceTree = "<group>"; };
+		31F73B541DC121100045CC1F /* Cousine-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Bold.ttf"; sourceTree = "<group>"; };
+		31F73B551DC121100045CC1F /* Cousine-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-BoldItalic.ttf"; sourceTree = "<group>"; };
+		31F73B561DC121100045CC1F /* Cousine-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Italic.ttf"; sourceTree = "<group>"; };
+		31F73B571DC121100045CC1F /* Cousine-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,7 @@
 		3177088C1BAE371500435A9A /* FootballNews */ = {
 			isa = PBXGroup;
 			children = (
+				31F73B431DC11F580045CC1F /* Fonts */,
 				3189091B1DBD990F004B7184 /* SWRevealViewController */,
 				31DE3C151BF07262009BF7CF /* CoreDataModel */,
 				319FD0391BC10AC200801B31 /* ViewControllers */,
@@ -164,6 +179,8 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
+				31F73B3D1DC111880045CC1F /* Menu-48.png */,
 				310708E91DC088F300C05881 /* back 21.png */,
 				310708E71DC0871F00C05881 /* backButton.png */,
 				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
@@ -200,6 +217,18 @@
 				31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */,
 			);
 			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		31F73B431DC11F580045CC1F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				31F73B541DC121100045CC1F /* Cousine-Bold.ttf */,
+				31F73B551DC121100045CC1F /* Cousine-BoldItalic.ttf */,
+				31F73B561DC121100045CC1F /* Cousine-Italic.ttf */,
+				31F73B571DC121100045CC1F /* Cousine-Regular.ttf */,
+				31F73B521DC121000045CC1F /* RussoOne-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +305,18 @@
 				31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */,
 				317708981BAE371500435A9A /* Assets.xcassets in Resources */,
 				31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */,
+				31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */,
 				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
 				313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */,
+				31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */,
+				31F73B421DC11A8B0045CC1F /* Previous-48.png in Resources */,
+				31F73B581DC121100045CC1F /* Cousine-Bold.ttf in Resources */,
+				31F73B531DC121000045CC1F /* RussoOne-Regular.ttf in Resources */,
 				31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */,
 				310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */,
 				31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */,
 				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
+				31F73B3E1DC111880045CC1F /* Menu-48.png in Resources */,
 				313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */,
 				310708E01DC070B200C05881 /* Human Head-48.png in Resources */,
 				313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */,
@@ -292,6 +327,7 @@
 				317708931BAE371500435A9A /* Main.storyboard in Resources */,
 				310708EA1DC088F300C05881 /* back 21.png in Resources */,
 				31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */,
+				31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */,
 				310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

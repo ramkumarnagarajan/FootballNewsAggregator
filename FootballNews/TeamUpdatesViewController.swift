@@ -14,6 +14,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
+    let tableCellTextColor = UIColor(red: 138/256, green: 139/256, blue: 142/256, alpha: 1)
     
     //Class Variables
     let allTeams : [Team] = Team().getStoredObjects("")
@@ -103,6 +104,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         let cell = UITableViewCell()
         // Configure the cell...
         cell.textLabel?.text="No Teams Found..Please add few.."
+        cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
         
         var t: Team
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -129,7 +131,8 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             
         }
         cell.backgroundColor=bodyBackgroundColor
-        cell.textLabel?.textColor=UIColor.white
+        cell.textLabel?.textColor = tableCellTextColor
+
         return cell
     }
     
