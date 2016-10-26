@@ -10,10 +10,14 @@ import UIKit
 
 class SlideMenuViewController: UITableViewController {
 
+    //backgroundColorVariables
+    let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame:.zero)
         self.tableView.backgroundColor=UIColor.darkGray
+        self.tableView.tableHeaderView?.backgroundColor=titleBackGroundColor
         // Do any additional setup after loading the view.
     }
 

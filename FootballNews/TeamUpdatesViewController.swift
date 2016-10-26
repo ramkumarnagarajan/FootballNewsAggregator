@@ -11,6 +11,10 @@ import CoreData
 
 class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableViewDataSource,UISearchResultsUpdating {
 
+    //backgroundColorVariables
+    let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
+    let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
+    
     //Class Variables
     let allTeams : [Team] = Team().getStoredObjects("")
     
@@ -45,7 +49,8 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         tableView.tableHeaderView=searchController.searchBar
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellMain")
         self.tableView.backgroundColor=UIColor.black
-        
+        self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
+
         if revealViewController() != nil
         {
             menuButton.target = self.revealViewController()
@@ -55,7 +60,14 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         }
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
+        self.view.backgroundColor = bodyBackgroundColor
+        self.tableView.backgroundColor=bodyBackgroundColor
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -116,7 +128,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             }
             
         }
-        cell.backgroundColor=UIColor.black
+        cell.backgroundColor=bodyBackgroundColor
         cell.textLabel?.textColor=UIColor.white
         return cell
     }
@@ -126,7 +138,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         // Return false if you do not want the specified item to be editable.
         return false
     }
-
 
     /*
     // MARK: - Navigation

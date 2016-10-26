@@ -11,10 +11,21 @@ import CoreData
 
 class ManageTeamsViewController: UITableViewController {
 
+    
+    //backgroundColorVariables
+    let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
+    let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
+    
     //Class Variables
     var txtTeamName:UITextField = UITextField()
     var txtSourceName:UITextField = UITextField()
     var txtSourceURL : UITextField = UITextField()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
+        self.view.backgroundColor = bodyBackgroundColor
+        self.tableView.backgroundColor=bodyBackgroundColor
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +34,6 @@ class ManageTeamsViewController: UITableViewController {
          self.clearsSelectionOnViewWillAppear = false
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
         let addTeamButton : UIBarButtonItem = UIBarButtonItem(image:UIImage(named:"BluePlusIcon"),  style: UIBarButtonItemStyle.plain, target: self, action: #selector(ManageTeamsViewController.addButtonPressed(_:)))
         
         let buttons : NSArray = [addTeamButton,self.editButtonItem]
@@ -31,6 +41,8 @@ class ManageTeamsViewController: UITableViewController {
         self.navigationItem.rightBarButtonItems = (buttons as! [UIBarButtonItem])
         let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
         self.view?.backgroundColor = viewBackGroundColor
+        tableView.tableFooterView = UIView(frame:.zero)
+        
     }
     
     
@@ -148,7 +160,8 @@ class ManageTeamsViewController: UITableViewController {
         //let cell = (tableView.dequeueReusableCellWithIdentifier("CellIdentifier"))! as UITableViewCell
         let teams : [Team] = Team().getStoredObjects("")
         let cell = UITableViewCell()
-
+        cell.backgroundColor=bodyBackgroundColor
+        cell.textLabel?.textColor=UIColor.white
         // Configure the cell...
         cell.textLabel?.text="No Teams Found..Please add few.."
         if(!teams.isEmpty && teams.count>0)
@@ -192,8 +205,6 @@ class ManageTeamsViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-   
-       
     
     /*
     // Override to support rearranging the table view.

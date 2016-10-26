@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31026D721C0AB4CC00DBF415 /* PlusIcon.png */; };
+		310708E01DC070B200C05881 /* Human Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708DF1DC070B200C05881 /* Human Head-48.png */; };
+		310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E11DC0764B00C05881 /* Ninja Head-48.png */; };
+		310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E21DC0764B00C05881 /* Spider-Man Head-48.png */; };
+		310708E81DC0871F00C05881 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E71DC0871F00C05881 /* backButton.png */; };
+		310708EA1DC088F300C05881 /* back 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E91DC088F300C05881 /* back 21.png */; };
 		3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */; };
 		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
 		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
@@ -45,6 +50,11 @@
 
 /* Begin PBXFileReference section */
 		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
+		310708DF1DC070B200C05881 /* Human Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Head-48.png"; sourceTree = "<group>"; };
+		310708E11DC0764B00C05881 /* Ninja Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ninja Head-48.png"; sourceTree = "<group>"; };
+		310708E21DC0764B00C05881 /* Spider-Man Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spider-Man Head-48.png"; sourceTree = "<group>"; };
+		310708E71DC0871F00C05881 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		310708E91DC088F300C05881 /* back 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back 21.png"; sourceTree = "<group>"; };
 		3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
 		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
@@ -154,6 +164,11 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				310708E91DC088F300C05881 /* back 21.png */,
+				310708E71DC0871F00C05881 /* backButton.png */,
+				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
+				310708E21DC0764B00C05881 /* Spider-Man Head-48.png */,
+				310708DF1DC070B200C05881 /* Human Head-48.png */,
 				319B90541DB808A800D1E8B9 /* LaunchScreen.png */,
 				315379841C1408730010F544 /* BluePlusIcon.png */,
 				313A07DC1BB9086400889396 /* HomeIcon.png */,
@@ -264,15 +279,20 @@
 				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
 				313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */,
 				31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */,
+				310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */,
 				31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */,
 				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
 				313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */,
+				310708E01DC070B200C05881 /* Human Head-48.png in Resources */,
 				313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */,
 				313A07E71BB91CDA00889396 /* facebook_login.png in Resources */,
 				313A07E31BB9191100889396 /* settings icon 3.png in Resources */,
 				313A07E51BB91A3600889396 /* twitter_and_facebook.png in Resources */,
+				310708E81DC0871F00C05881 /* backButton.png in Resources */,
 				317708931BAE371500435A9A /* Main.storyboard in Resources */,
+				310708EA1DC088F300C05881 /* back 21.png in Resources */,
 				31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */,
+				310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
