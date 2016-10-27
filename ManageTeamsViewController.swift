@@ -109,7 +109,7 @@ class ManageTeamsViewController: UITableViewController {
             
             //need to refresh the table, insert the new team into the table
             alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-            alert = UIAlertController(title: "Saved Successfully ", message: "Save Did  Completed Successfully..", preferredStyle: UIAlertControllerStyle.alert)
+            alert = UIAlertController(title: "Saved Successfully ", message: "Save Completed Successfully for ".appending(teamName!), preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(alertSaveButton)
             
         }
@@ -117,7 +117,7 @@ class ManageTeamsViewController: UITableViewController {
         {
             //show alert with error
             alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
-            alert = UIAlertController(title: "Save Failed", message: "Save Did Not Complete Successfully..", preferredStyle: UIAlertControllerStyle.alert)
+            alert = UIAlertController(title: "Save Failed", message: "There seems to be an error.. please re try", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(alertSaveButton)
             
         }
