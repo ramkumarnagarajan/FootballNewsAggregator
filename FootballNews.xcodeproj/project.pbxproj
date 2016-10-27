@@ -13,6 +13,8 @@
 		310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E21DC0764B00C05881 /* Spider-Man Head-48.png */; };
 		310708E81DC0871F00C05881 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E71DC0871F00C05881 /* backButton.png */; };
 		310708EA1DC088F300C05881 /* back 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E91DC088F300C05881 /* back 21.png */; };
+		311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33101DC1585A003395AB /* LiverpoolAllBlack.png */; };
+		311F33131DC15E53003395AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F33121DC15E53003395AB /* DetailViewController.swift */; };
 		3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */; };
 		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
 		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
@@ -62,6 +64,8 @@
 		310708E21DC0764B00C05881 /* Spider-Man Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spider-Man Head-48.png"; sourceTree = "<group>"; };
 		310708E71DC0871F00C05881 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
 		310708E91DC088F300C05881 /* back 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back 21.png"; sourceTree = "<group>"; };
+		311F33101DC1585A003395AB /* LiverpoolAllBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolAllBlack.png; sourceTree = "<group>"; };
+		311F33121DC15E53003395AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
 		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */,
 				314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */,
 				31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */,
+				311F33121DC15E53003395AB /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				311F33101DC1585A003395AB /* LiverpoolAllBlack.png */,
 				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
 				31F73B3D1DC111880045CC1F /* Menu-48.png */,
 				310708E91DC088F300C05881 /* back 21.png */,
@@ -297,6 +303,7 @@
 			files = (
 				313A07E11BB9176800889396 /* settings icon 2.png in Resources */,
 				313A07DE1BB9086400889396 /* HomeIcon.png in Resources */,
+				311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */,
 				319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */,
 				314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */,
 				3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */,
@@ -339,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311F33131DC15E53003395AB /* DetailViewController.swift in Sources */,
 				3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */,
 				3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */,
 				31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */,

@@ -16,9 +16,13 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
     let tableCellTextColor = UIColor(red: 138/256, green: 139/256, blue: 142/256, alpha: 1)
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
+    let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
     
     //Class Variables
     let allTeams : [Team] = Team().getStoredObjects("")
+    var strSourceURL = ""
+    var strTeamName = ""
+    
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -38,6 +42,20 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         filteredTeams = allTeams.filter{team in
             return team.teamName.lowercased().contains(searchText.lowercased())}
         tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier
+        {
+            if (identifier.contains("showDetail"))
+            {
+                let detailVC = segue.destination as! DetailViewController
+                detailVC.strTeamURL = strSourceURL
+                detailVC.strTeamName = strTeamName
+                
+                print("Prepare for segue called")
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -67,6 +85,9 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
         self.tableView.backgroundColor=bodyBackgroundColor
+        let imageView = UIImageView(image: tableBackgroundImage)
+        imageView.contentMode = .scaleAspectFit
+        self.tableView.backgroundView = imageView
     }
     
     
@@ -135,6 +156,47 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         cell.textLabel?.textColor = tableCellTextColor
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = bodyBackgroundColor.withAlphaComponent(0.5)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let teams : [Team] = allTeams
+        
+        var t: Team
+        if searchController.isActive && searchController.searchBar.text != "" {
+            if(!filteredTeams.isEmpty && filteredTeams.count>0)
+            {
+                t = filteredTeams[indexPath.row]
+                let strTeamName = t.teamName.capitalized
+                let strSrcName = t.sourceName.capitalized
+                
+                self.strTeamName = strTeamName
+                self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
+                
+                
+                print(strTeamName.appending(" - ").appending(strSrcName))
+            }
+        }
+        else
+        {
+            if(!teams.isEmpty && teams.count>0)
+            {
+                let strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
+                let strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
+                self.strTeamName = strTeamName
+                self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
+                
+                print(strTeamName.appending(" - ").appending(strSrcName))
+            }
+            
+        }
+        // Start segue with index of cell clicked
+        self.performSegue(withIdentifier: "showDetail", sender: self)
     }
     
     // Override to support conditional editing of the table view.
