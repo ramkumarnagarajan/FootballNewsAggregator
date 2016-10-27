@@ -277,7 +277,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" id="R5R-kA-pci">
+                            <webView contentMode="scaleAspectFit" misplaced="YES" scalesPageToFit="YES" id="R5R-kA-pci">
                                 <frame key="frameInset" minY="70" width="768" height="954"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPx-73-vGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-839" y="462"/>
+            <point key="canvasLocation" x="121" y="-694"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XnC-I4-iTT">
