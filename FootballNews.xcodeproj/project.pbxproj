@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310009B51DC4022500C951CC /* ColorsAndFonts.swift */; };
 		31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31026D721C0AB4CC00DBF415 /* PlusIcon.png */; };
 		310708E01DC070B200C05881 /* Human Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708DF1DC070B200C05881 /* Human Head-48.png */; };
 		310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E11DC0764B00C05881 /* Ninja Head-48.png */; };
@@ -15,6 +16,7 @@
 		310708EA1DC088F300C05881 /* back 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E91DC088F300C05881 /* back 21.png */; };
 		311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33101DC1585A003395AB /* LiverpoolAllBlack.png */; };
 		311F33131DC15E53003395AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F33121DC15E53003395AB /* DetailViewController.swift */; };
+		311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */; };
 		3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */; };
 		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
 		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
@@ -58,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310009B51DC4022500C951CC /* ColorsAndFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
 		310708DF1DC070B200C05881 /* Human Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Head-48.png"; sourceTree = "<group>"; };
 		310708E11DC0764B00C05881 /* Ninja Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ninja Head-48.png"; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		310708E91DC088F300C05881 /* back 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back 21.png"; sourceTree = "<group>"; };
 		311F33101DC1585A003395AB /* LiverpoolAllBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolAllBlack.png; sourceTree = "<group>"; };
 		311F33121DC15E53003395AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Social-Login-Buttons.png"; sourceTree = "<group>"; };
 		3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
 		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
@@ -123,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310009B41DC401C200C951CC /* ColorsAndSettings */ = {
+			isa = PBXGroup;
+			children = (
+				310009B51DC4022500C951CC /* ColorsAndFonts.swift */,
+			);
+			name = ColorsAndSettings;
+			sourceTree = "<group>";
+		};
 		317708811BAE371500435A9A = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +154,7 @@
 		3177088C1BAE371500435A9A /* FootballNews */ = {
 			isa = PBXGroup;
 			children = (
+				310009B41DC401C200C951CC /* ColorsAndSettings */,
 				31F73B431DC11F580045CC1F /* Fonts */,
 				3189091B1DBD990F004B7184 /* SWRevealViewController */,
 				31DE3C151BF07262009BF7CF /* CoreDataModel */,
@@ -184,6 +197,7 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */,
 				311F33101DC1585A003395AB /* LiverpoolAllBlack.png */,
 				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
 				31F73B3D1DC111880045CC1F /* Menu-48.png */,
@@ -313,6 +327,7 @@
 				317708981BAE371500435A9A /* Assets.xcassets in Resources */,
 				31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */,
 				31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */,
+				311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */,
 				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
 				313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */,
 				31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */,
@@ -358,6 +373,7 @@
 				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
+				310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */,
 				31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
