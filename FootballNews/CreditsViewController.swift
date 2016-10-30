@@ -22,7 +22,7 @@ class CreditsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
-}
+} 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
