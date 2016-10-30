@@ -2,22 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>RussoOne-Regular.ttf</string>
-		<string>Cousine-Regular.ttf</string>
-		<string>Cousine-Italic.ttf</string>
-		<string>Cousine-Bold.ttf</string>
-		<string>Cousine-BoldItalic.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string></string>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -30,12 +22,44 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>fce123bc8166859260b704a89b75a532f24b74a0</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>1oQYWLCQP61BkxZ3rIGhXOz4F</string>
+					<key>consumerSecret</key>
+					<string>2qpcNoPqb53wYQVrd08VjDda6H1MetmQTcR2iivtcSbH6BcwNN</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RussoOne-Regular.ttf</string>
+		<string>Cousine-Regular.ttf</string>
+		<string>Cousine-Italic.ttf</string>
+		<string>Cousine-Bold.ttf</string>
+		<string>Cousine-BoldItalic.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -48,11 +72,6 @@
 	<false/>
 	<key>UIStatusBarHidden~ipad</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

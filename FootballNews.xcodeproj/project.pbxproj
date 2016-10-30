@@ -37,6 +37,11 @@
 		317708981BAE371500435A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317708971BAE371500435A9A /* Assets.xcassets */; };
 		3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708991BAE371500435A9A /* LaunchScreen.storyboard */; };
 		3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3189091E1DBD9945004B7184 /* SWRevealViewController.m */; };
+		3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E6781DC67D0000B6C6C7 /* Fabric.framework */; };
+		3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */; };
+		3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */; };
+		3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */; };
+		3199E6811DC67E8700B6C6C7 /* TwitterFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */; };
 		319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 319B90541DB808A800D1E8B9 /* LaunchScreen.png */; };
 		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
 		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
@@ -46,7 +51,6 @@
 		31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */; };
 		31AE43F71DBF3CE4005F29A9 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */; };
 		31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */; };
-		31D2D8481DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */; };
 		31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */; };
 		31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C121BF07246009BF7CF /* TeamAndSource.swift */; };
 		31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */; };
@@ -94,6 +98,11 @@
 		3189091C1DBD9944004B7184 /* FootballNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootballNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		3189091D1DBD9945004B7184 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		3189091E1DBD9945004B7184 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		3199E6781DC67D0000B6C6C7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFeedViewController.swift; sourceTree = "<group>"; };
 		319B90541DB808A800D1E8B9 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +112,6 @@
 		31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolTeamLogo.png; sourceTree = "<group>"; };
 		31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon3.png; sourceTree = "<group>"; };
-		31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTeamUpdatesViewController.swift; sourceTree = "<group>"; };
 		31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TeamAnSource+CoreDataProperties.swift"; path = "../TeamAnSource+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		31DE3C121BF07246009BF7CF /* TeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamAndSource.swift; path = ../TeamAndSource.swift; sourceTree = "<group>"; };
 		31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTeamAndSource.swift; sourceTree = "<group>"; };
@@ -121,6 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */,
+				3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */,
+				3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,10 @@
 		317708811BAE371500435A9A = {
 			isa = PBXGroup;
 			children = (
+				3199E6781DC67D0000B6C6C7 /* Fabric.framework */,
+				3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */,
+				3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */,
+				3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */,
 				3177088C1BAE371500435A9A /* FootballNews */,
 				3177088B1BAE371500435A9A /* Products */,
 			);
@@ -185,11 +200,11 @@
 			children = (
 				31AD77911BAE768000F77E48 /* SetupViewController.swift */,
 				319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */,
-				31D2D8471DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift */,
 				3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */,
 				314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */,
 				31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */,
 				311F33121DC15E53003395AB /* DetailViewController.swift */,
+				3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -261,6 +276,7 @@
 				317708861BAE371500435A9A /* Sources */,
 				317708871BAE371500435A9A /* Frameworks */,
 				317708881BAE371500435A9A /* Resources */,
+				3199E6771DC67CA600B6C6C7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +333,7 @@
 			files = (
 				313A07E11BB9176800889396 /* settings icon 2.png in Resources */,
 				313A07DE1BB9086400889396 /* HomeIcon.png in Resources */,
+				3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */,
 				311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */,
 				319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */,
 				314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */,
@@ -356,6 +373,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3199E6771DC67CA600B6C6C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run fce123bc8166859260b704a89b75a532f24b74a0 c61b0cf5882c6031c7d37dc8cf42a2cfc7aa70f256016a1e5a519ca6be0b0ff6";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		317708861BAE371500435A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -368,9 +401,9 @@
 				31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */,
 				31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */,
 				314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */,
-				31D2D8481DAF1E2800EA592C /* ViewTeamUpdatesViewController.swift in Sources */,
 				31AE43F71DBF3CE4005F29A9 /* CreditsViewController.swift in Sources */,
 				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
+				3199E6811DC67E8700B6C6C7 /* TwitterFeedViewController.swift in Sources */,
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
 				310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */,
@@ -495,6 +528,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +551,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

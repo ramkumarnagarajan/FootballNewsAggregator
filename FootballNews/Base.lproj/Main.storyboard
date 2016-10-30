@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="MW6-iN-sBX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="MW6-iN-sBX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -54,7 +54,7 @@
                                 <frame key="frameInset" minX="528" minY="541" width="240" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UnI-0g-u5l" id="bQc-iW-I4V">
-                                    <frame key="frameInset" width="240" height="65"/>
+                                    <frame key="frameInset" width="240" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Github Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8li-V2-ylH">
@@ -242,7 +242,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgk-Pr-QGu" id="ONT-VO-KL9">
-                                            <frame key="frameInset" width="735" height="49"/>
+                                            <frame key="frameInset" width="702" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -266,6 +266,7 @@
                     <connections>
                         <outlet property="menuButton" destination="WyN-JX-9iK" id="E2D-8b-JNj"/>
                         <outlet property="tableView" destination="Tx2-zr-cCr" id="7hw-TE-4CG"/>
+                        <segue destination="Uv7-kU-g0U" kind="push" identifier="showTwitterDetail" id="lE0-ee-b3j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHk-XI-zJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,6 +280,15 @@
                     <view key="view" contentMode="scaleToFill" id="g23-2A-cba">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="83g-AE-w8j">
+                                <frame key="frameInset" minX="258" minY="418" width="253" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Social-Login-Buttons.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MVh-x3-55L">
@@ -292,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSm-FD-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="486"/>
+            <point key="canvasLocation" x="1121" y="486"/>
         </scene>
         <!--Updates For ....-->
         <scene sceneID="OXg-1F-oXp">
@@ -396,6 +406,42 @@
             </objects>
             <point key="canvasLocation" x="-942" y="-2011"/>
         </scene>
+        <!--Twitter Feed View Controller-->
+        <scene sceneID="Ztm-2x-UTy">
+            <objects>
+                <tableViewController id="Uv7-kU-g0U" customClass="TwitterFeedViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N0S-bH-s7a">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="odp-9q-lhU">
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odp-9q-lhU" id="un1-qJ-wy8">
+                                    <frame key="frameInset" width="768" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Uv7-kU-g0U" id="rVZ-Ys-OiE"/>
+                            <outlet property="delegate" destination="Uv7-kU-g0U" id="lYf-bx-6Fd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ois-Pl-48h">
+                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="eqT-G4-G8e">
+                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="960-BB-RbQ" kind="push" id="k5A-ZR-kVC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGC-dP-K44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-834" y="510"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Qm-lI-pV3">
             <objects>
@@ -417,13 +463,37 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Z5-FW-pTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-839" y="486"/>
+            <point key="canvasLocation" x="141" y="486"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZsE-FW-uYf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9P-Mt-11w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ohu-s2-8zR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJS-Pj-d95">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="23"/>
+                            <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uv7-kU-g0U" kind="relationship" relationship="rootViewController" id="HFA-Ch-0JL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmP-l3-cbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1814" y="510"/>
         </scene>
     </scenes>
     <resources>
         <image name="Menu-48.png" width="48" height="48"/>
         <image name="Ninja Head-48.png" width="48" height="48"/>
         <image name="Previous-48.png" width="48" height="48"/>
+        <image name="Social-Login-Buttons.png" width="400" height="300"/>
         <image name="Spider-Man Head-48.png" width="48" height="48"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -433,7 +503,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="pCJ-tl-gYe"/>
-        <segue reference="v2B-1J-jNA"/>
+        <segue reference="k5A-ZR-kVC"/>
+        <segue reference="lE0-ee-b3j"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

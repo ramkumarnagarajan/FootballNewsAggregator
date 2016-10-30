@@ -69,7 +69,7 @@ class ManageTeamsViewController: UITableViewController {
     
     func configureSourceURLTextField(_ textField: UITextField!)
     {
-        textField.placeholder="Enter Source URL"
+        textField.placeholder="Enter Source URL/Twitter ScreenName"
         self.txtSourceURL = textField
     }
     

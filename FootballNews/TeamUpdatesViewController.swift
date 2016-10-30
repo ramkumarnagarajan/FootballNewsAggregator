@@ -44,20 +44,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         tableView.reloadData()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier
-        {
-            if (identifier.contains("showDetail"))
-            {
-                let detailVC = segue.destination as! DetailViewController
-                detailVC.strTeamURL = strSourceURL
-                detailVC.strTeamName = strTeamName
-                
-                print("Prepare for segue called")
-            }
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
@@ -124,6 +110,9 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         //let cell = (tableView.dequeueReusableCellWithIdentifier("CellIdentifier"))! as UITableViewCell
         let teams : [Team] = Team().getStoredObjects("")
         let cell = UITableViewCell()
+        var strTeamName = ""
+        var strSrcName = ""
+        
         // Configure the cell...
         cell.textLabel?.text="No Teams Found..Please add few.."
         cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
@@ -133,10 +122,10 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             if(!filteredTeams.isEmpty && filteredTeams.count>0)
             {
                 t = filteredTeams[indexPath.row]
-                let strTeamName = t.teamName.capitalized
-                let strSrcName = t.sourceName.capitalized
+                strTeamName = t.teamName.capitalized
+                strSrcName = t.sourceName.capitalized
                 
-                cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
+                //Some indication that this result is filtered..
                 cell.layer.borderWidth = 2.0
                 cell.layer.borderColor = UIColor.cyan.cgColor
             }
@@ -145,13 +134,12 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         {
             if(!teams.isEmpty && teams.count>0)
             {
-                let strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
-                let strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
-                
-                cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
+                strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
+                strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
             }
             
         }
+        cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
         cell.backgroundColor=bodyBackgroundColor
         cell.textLabel?.textColor = tableCellTextColor
 
@@ -166,14 +154,17 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let teams : [Team] = allTeams
+        var segueIdentifier = "showDetail"
+        var strTeamName = ""
+        var strSrcName = ""
         
         var t: Team
         if searchController.isActive && searchController.searchBar.text != "" {
             if(!filteredTeams.isEmpty && filteredTeams.count>0)
             {
                 t = filteredTeams[indexPath.row]
-                let strTeamName = t.teamName.capitalized
-                let strSrcName = t.sourceName.capitalized
+                strTeamName = t.teamName.capitalized
+                strSrcName = t.sourceName.capitalized
                 
                 self.strTeamName = strTeamName
                 self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
@@ -186,8 +177,8 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         {
             if(!teams.isEmpty && teams.count>0)
             {
-                let strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
-                let strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
+                strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
+                strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
                 self.strTeamName = strTeamName
                 self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
                 
@@ -195,8 +186,37 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             }
             
         }
+        if(strSourceURL.contains("#") || strSourceURL.contains("@"))
+        {
+            //performSegue for twitter view controller.
+            segueIdentifier = "showTwitterDetail"
+        }
         // Start segue with index of cell clicked
-        self.performSegue(withIdentifier: "showDetail", sender: self)
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier
+        {
+            if (identifier.contains("showDetail"))
+            {
+                let detailVC = segue.destination as! DetailViewController
+                detailVC.strTeamURL = strSourceURL
+                detailVC.strTeamName = strTeamName
+                
+                print("Prepare for segue called")
+            }
+            
+            if(identifier.contains("showTwitterDetail"))
+            {
+                let detailVC = segue.destination as! TwitterFeedViewController
+                detailVC.strScreenName = strSourceURL
+                detailVC.strTeamName = strTeamName
+                
+                print("Prepare for segue called")
+                
+            }
+        }
     }
     
     // Override to support conditional editing of the table view.
