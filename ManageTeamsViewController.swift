@@ -111,6 +111,7 @@ class ManageTeamsViewController: UITableViewController {
             alertSaveButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
             alert = UIAlertController(title: "Saved Successfully ", message: "Save Completed Successfully for ".appending(teamName!), preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(alertSaveButton)
+            tableView.reloadData()
             
         }
         else
