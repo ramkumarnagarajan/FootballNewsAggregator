@@ -54,7 +54,7 @@
                                 <frame key="frameInset" minX="528" minY="541" width="240" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UnI-0g-u5l" id="bQc-iW-I4V">
-                                    <frame key="frameInset" width="240" height="64"/>
+                                    <frame key="frameInset" width="240" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Github Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8li-V2-ylH">
@@ -148,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SEW-7o-fie" id="scG-7J-3SB">
-                                            <frame key="frameInset" width="702" height="60"/>
+                                            <frame key="frameInset" width="702" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manage Teams And  Sources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xIA-1x-8AJ">
@@ -170,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="89" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gt8-go-OQl" id="2OP-NU-uEf">
-                                            <frame key="frameInset" width="702" height="43"/>
+                                            <frame key="frameInset" width="702" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manage User Logins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FFo-eC-2dE">
@@ -191,7 +191,7 @@
                                         <rect key="frame" x="0.0" y="133" width="768" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnf-ug-niK" id="FqQ-R6-69U">
-                                            <frame key="frameInset" width="702" height="56"/>
+                                            <frame key="frameInset" width="702" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Developer Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="817-Qv-gEO">
@@ -242,7 +242,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgk-Pr-QGu" id="ONT-VO-KL9">
-                                            <frame key="frameInset" width="702" height="48"/>
+                                            <frame key="frameInset" width="702" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -503,7 +503,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="pCJ-tl-gYe"/>
-        <segue reference="k5A-ZR-kVC"/>
+        <segue reference="jRy-V9-qBg"/>
         <segue reference="lE0-ee-b3j"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

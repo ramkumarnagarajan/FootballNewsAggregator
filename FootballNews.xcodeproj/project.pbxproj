@@ -12,21 +12,13 @@
 		310708E01DC070B200C05881 /* Human Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708DF1DC070B200C05881 /* Human Head-48.png */; };
 		310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E11DC0764B00C05881 /* Ninja Head-48.png */; };
 		310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E21DC0764B00C05881 /* Spider-Man Head-48.png */; };
-		310708E81DC0871F00C05881 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E71DC0871F00C05881 /* backButton.png */; };
-		310708EA1DC088F300C05881 /* back 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E91DC088F300C05881 /* back 21.png */; };
 		311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33101DC1585A003395AB /* LiverpoolAllBlack.png */; };
 		311F33131DC15E53003395AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F33121DC15E53003395AB /* DetailViewController.swift */; };
 		311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */; };
 		3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */; };
 		313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07D81BB8EB3700889396 /* SettingsBlue.png */; };
-		313A07DE1BB9086400889396 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DC1BB9086400889396 /* HomeIcon.png */; };
-		313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07DD1BB9086400889396 /* HomeIcon2.png */; };
 		313A07E11BB9176800889396 /* settings icon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E01BB9176800889396 /* settings icon 2.png */; };
-		313A07E31BB9191100889396 /* settings icon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E21BB9191100889396 /* settings icon 3.png */; };
-		313A07E51BB91A3600889396 /* twitter_and_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E41BB91A3600889396 /* twitter_and_facebook.png */; };
-		313A07E71BB91CDA00889396 /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E61BB91CDA00889396 /* facebook_login.png */; };
 		313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E81BB91D8000889396 /* facebook_logo.png */; };
-		313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 313A07E91BB91D8000889396 /* twitter_logo.png */; };
 		314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */; };
 		314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */; };
 		314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */; };
@@ -42,15 +34,11 @@
 		3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */; };
 		3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */; };
 		3199E6811DC67E8700B6C6C7 /* TwitterFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */; };
-		319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 319B90541DB808A800D1E8B9 /* LaunchScreen.png */; };
 		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
 		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
-		31AD779B1BAE7E5500F77E48 /* LaunchScreenTrophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */; };
 		31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */; };
-		31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */; };
 		31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */; };
 		31AE43F71DBF3CE4005F29A9 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */; };
-		31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */; };
 		31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */; };
 		31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C121BF07246009BF7CF /* TeamAndSource.swift */; };
 		31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */; };
@@ -69,21 +57,13 @@
 		310708DF1DC070B200C05881 /* Human Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Head-48.png"; sourceTree = "<group>"; };
 		310708E11DC0764B00C05881 /* Ninja Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ninja Head-48.png"; sourceTree = "<group>"; };
 		310708E21DC0764B00C05881 /* Spider-Man Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spider-Man Head-48.png"; sourceTree = "<group>"; };
-		310708E71DC0871F00C05881 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
-		310708E91DC088F300C05881 /* back 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back 21.png"; sourceTree = "<group>"; };
 		311F33101DC1585A003395AB /* LiverpoolAllBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolAllBlack.png; sourceTree = "<group>"; };
 		311F33121DC15E53003395AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Social-Login-Buttons.png"; sourceTree = "<group>"; };
 		3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		313A07D81BB8EB3700889396 /* SettingsBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBlue.png; sourceTree = "<group>"; };
-		313A07DC1BB9086400889396 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
-		313A07DD1BB9086400889396 /* HomeIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon2.png; sourceTree = "<group>"; };
 		313A07E01BB9176800889396 /* settings icon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings icon 2.png"; sourceTree = "<group>"; };
-		313A07E21BB9191100889396 /* settings icon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings icon 3.png"; sourceTree = "<group>"; };
-		313A07E41BB91A3600889396 /* twitter_and_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_and_facebook.png; sourceTree = "<group>"; };
-		313A07E61BB91CDA00889396 /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
 		313A07E81BB91D8000889396 /* facebook_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_logo.png; sourceTree = "<group>"; };
-		313A07E91BB91D8000889396 /* twitter_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo.png; sourceTree = "<group>"; };
 		314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamUpdatesViewController.swift; sourceTree = "<group>"; };
 		314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageAccountsIcon.png; sourceTree = "<group>"; };
 		314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageTeamsIcon2.png; sourceTree = "<group>"; };
@@ -103,15 +83,11 @@
 		3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFeedViewController.swift; sourceTree = "<group>"; };
-		319B90541DB808A800D1E8B9 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
-		31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenTrophy.png; sourceTree = "<group>"; };
 		31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenEPL.png; sourceTree = "<group>"; };
-		31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChelseaTeamLogo.png; sourceTree = "<group>"; };
 		31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolTeamLogo.png; sourceTree = "<group>"; };
 		31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
-		31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoreIcon3.png; sourceTree = "<group>"; };
 		31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TeamAnSource+CoreDataProperties.swift"; path = "../TeamAnSource+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		31DE3C121BF07246009BF7CF /* TeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamAndSource.swift; path = ../TeamAndSource.swift; sourceTree = "<group>"; };
 		31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTeamAndSource.swift; sourceTree = "<group>"; };
@@ -216,30 +192,18 @@
 				311F33101DC1585A003395AB /* LiverpoolAllBlack.png */,
 				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
 				31F73B3D1DC111880045CC1F /* Menu-48.png */,
-				310708E91DC088F300C05881 /* back 21.png */,
-				310708E71DC0871F00C05881 /* backButton.png */,
 				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
 				310708E21DC0764B00C05881 /* Spider-Man Head-48.png */,
 				310708DF1DC070B200C05881 /* Human Head-48.png */,
-				319B90541DB808A800D1E8B9 /* LaunchScreen.png */,
 				315379841C1408730010F544 /* BluePlusIcon.png */,
-				313A07DC1BB9086400889396 /* HomeIcon.png */,
 				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
 				313A07E01BB9176800889396 /* settings icon 2.png */,
 				314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */,
 				314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */,
-				313A07DD1BB9086400889396 /* HomeIcon2.png */,
-				313A07E41BB91A3600889396 /* twitter_and_facebook.png */,
-				313A07E21BB9191100889396 /* settings icon 3.png */,
-				313A07E61BB91CDA00889396 /* facebook_login.png */,
-				31C01AFC1BC0FCD2004DB934 /* MoreIcon3.png */,
 				313A07D81BB8EB3700889396 /* SettingsBlue.png */,
 				31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */,
 				313A07E81BB91D8000889396 /* facebook_logo.png */,
-				313A07E91BB91D8000889396 /* twitter_logo.png */,
-				31AD77A41BAE83F600F77E48 /* ChelseaTeamLogo.png */,
 				31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */,
-				31AD779A1BAE7E5500F77E48 /* LaunchScreenTrophy.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -332,39 +296,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				313A07E11BB9176800889396 /* settings icon 2.png in Resources */,
-				313A07DE1BB9086400889396 /* HomeIcon.png in Resources */,
 				3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */,
 				311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */,
-				319B90551DB808A800D1E8B9 /* LaunchScreen.png in Resources */,
 				314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */,
 				3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */,
 				314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */,
-				31AD779B1BAE7E5500F77E48 /* LaunchScreenTrophy.png in Resources */,
 				31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */,
 				317708981BAE371500435A9A /* Assets.xcassets in Resources */,
 				31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */,
 				31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */,
 				311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */,
 				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
-				313A07DF1BB9086400889396 /* HomeIcon2.png in Resources */,
 				31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */,
 				31F73B421DC11A8B0045CC1F /* Previous-48.png in Resources */,
 				31F73B581DC121100045CC1F /* Cousine-Bold.ttf in Resources */,
 				31F73B531DC121000045CC1F /* RussoOne-Regular.ttf in Resources */,
-				31AD77A51BAE83F600F77E48 /* ChelseaTeamLogo.png in Resources */,
 				310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */,
-				31C01AFD1BC0FCD2004DB934 /* MoreIcon3.png in Resources */,
 				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
 				31F73B3E1DC111880045CC1F /* Menu-48.png in Resources */,
 				313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */,
 				310708E01DC070B200C05881 /* Human Head-48.png in Resources */,
-				313A07EB1BB91D8000889396 /* twitter_logo.png in Resources */,
-				313A07E71BB91CDA00889396 /* facebook_login.png in Resources */,
-				313A07E31BB9191100889396 /* settings icon 3.png in Resources */,
-				313A07E51BB91A3600889396 /* twitter_and_facebook.png in Resources */,
-				310708E81DC0871F00C05881 /* backButton.png in Resources */,
 				317708931BAE371500435A9A /* Main.storyboard in Resources */,
-				310708EA1DC088F300C05881 /* back 21.png in Resources */,
 				31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */,
 				31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */,
 				310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */,

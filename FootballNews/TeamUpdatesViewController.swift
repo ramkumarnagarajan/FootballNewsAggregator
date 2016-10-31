@@ -167,7 +167,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
                 strSrcName = t.sourceName.capitalized
                 
                 self.strTeamName = strTeamName
-                self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
+                self.strSourceURL = t.sourceURL
                 
                 
                 print(strTeamName.appending(" - ").appending(strSrcName))
