@@ -46,8 +46,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewBackGroundColor = UIColor(red:36/256,green:36/256,blue:36/256,alpha:1)
-        self.view?.backgroundColor = viewBackGroundColor
         tableView.tableFooterView = UIView(frame: .zero)
         searchController.searchResultsUpdater=self
         searchController.dimsBackgroundDuringPresentation=false
@@ -72,7 +70,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         self.view.backgroundColor = bodyBackgroundColor
         self.tableView.backgroundColor=bodyBackgroundColor
         let imageView = UIImageView(image: tableBackgroundImage)
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
     }
     
@@ -224,15 +222,5 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         // Return false if you do not want the specified item to be editable.
         return false
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
