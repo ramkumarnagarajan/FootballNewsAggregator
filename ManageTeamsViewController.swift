@@ -28,6 +28,10 @@ class ManageTeamsViewController: UITableViewController {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
         self.tableView.backgroundColor=bodyBackgroundColor
+        let imageView = UIImageView(image: tableBackgroundImage)
+        imageView.contentMode = .scaleAspectFill
+        self.tableView.backgroundView = imageView
+        self.title = "MANAGE SOURCES"
     }
     
     override func viewDidLoad() {

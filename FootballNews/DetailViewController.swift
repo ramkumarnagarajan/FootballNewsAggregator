@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         print("Detail View Controller loaded")
         print(strTeamName)
         print(strTeamURL)
-        self.title = "UPDATES FOR ".appending(strTeamName)
+        self.title = strTeamName.appending(" - UPDATES")
         webViewOutlet.loadRequest(NSURLRequest(url: NSURL(string: strTeamURL)! as URL) as URLRequest)
 
         // Do any additional setup after loading the view.

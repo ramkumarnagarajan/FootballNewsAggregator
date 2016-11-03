@@ -19,7 +19,7 @@ class SetupViewController : UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "MANAGE ACTIVE LOGINS"
+        self.title = "TWITTER LOGIN"
         
         let logInButton = TWTRLogInButton { (session, error) in
             if let unwrappedSession = session {
@@ -45,6 +45,9 @@ class SetupViewController : UIViewController
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
+        
+        TWTRTweetView.appearance().theme = .dark
+
     }
 
     

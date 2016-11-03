@@ -38,7 +38,7 @@ class TwitterFeedViewController: TWTRTimelineViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
-        self.title = "Twitter Timeline for ".appending(strTeamName)
+        self.title = strTeamName.appending(" - Timeline")
         TWTRTweetView.appearance().theme = .dark
     }
 }
