@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310009B51DC4022500C951CC /* ColorsAndFonts.swift */; };
 		31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31026D721C0AB4CC00DBF415 /* PlusIcon.png */; };
-		310708E01DC070B200C05881 /* Human Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708DF1DC070B200C05881 /* Human Head-48.png */; };
 		310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E11DC0764B00C05881 /* Ninja Head-48.png */; };
 		310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 310708E21DC0764B00C05881 /* Spider-Man Head-48.png */; };
 		311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33101DC1585A003395AB /* LiverpoolAllBlack.png */; };
@@ -58,7 +57,6 @@
 /* Begin PBXFileReference section */
 		310009B51DC4022500C951CC /* ColorsAndFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
-		310708DF1DC070B200C05881 /* Human Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Human Head-48.png"; sourceTree = "<group>"; };
 		310708E11DC0764B00C05881 /* Ninja Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ninja Head-48.png"; sourceTree = "<group>"; };
 		310708E21DC0764B00C05881 /* Spider-Man Head-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spider-Man Head-48.png"; sourceTree = "<group>"; };
 		311F33101DC1585A003395AB /* LiverpoolAllBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolAllBlack.png; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				31F73B3D1DC111880045CC1F /* Menu-48.png */,
 				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
 				310708E21DC0764B00C05881 /* Spider-Man Head-48.png */,
-				310708DF1DC070B200C05881 /* Human Head-48.png */,
 				315379841C1408730010F544 /* BluePlusIcon.png */,
 				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
 				313A07E01BB9176800889396 /* settings icon 2.png */,
@@ -330,7 +327,6 @@
 				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
 				31F73B3E1DC111880045CC1F /* Menu-48.png in Resources */,
 				313A07EA1BB91D8000889396 /* facebook_logo.png in Resources */,
-				310708E01DC070B200C05881 /* Human Head-48.png in Resources */,
 				317708931BAE371500435A9A /* Main.storyboard in Resources */,
 				31AD77A71BAE852D00F77E48 /* LiverpoolTeamLogo.png in Resources */,
 				31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */,
