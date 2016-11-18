@@ -16,7 +16,11 @@ class SetupViewController : UIViewController
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
     
+    @IBAction func btnGetUserSessionInfo(_ sender: AnyObject) {
+        loggedinuser()
+    }
     
+    @IBOutlet weak var lblUserName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "TWITTER LOGIN"
@@ -36,18 +40,29 @@ class SetupViewController : UIViewController
         
         // TODO: Change where the log in button is positioned in your view
         logInButton.center = self.view.center
-        self.view.addSubview(logInButton)
-
+        self.view.addSubview(logInButton)          
         
 }
     
+    func loggedinuser()
+    {
+        Twitter.sharedInstance().logIn { session, error in
+            if (session != nil) {
+                print("signed in as \(session?.userName)");
+                self.lblUserName.text = session?.userID
+            } else {
+                print("error: \(error?.localizedDescription)");
+                self.lblUserName.text = "User Session expired, retry.."
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
         
         TWTRTweetView.appearance().theme = .dark
-
+        loggedinuser()
     }
 
     

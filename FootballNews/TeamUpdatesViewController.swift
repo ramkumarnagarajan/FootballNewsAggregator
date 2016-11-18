@@ -59,7 +59,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
-            self.revealViewController().rearViewRevealWidth = 500
+            //self.revealViewController().rearViewRevealWidth = 400
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         // Do any additional setup after loading the view.

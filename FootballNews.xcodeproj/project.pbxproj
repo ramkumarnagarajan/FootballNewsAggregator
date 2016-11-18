@@ -25,7 +25,19 @@
 		314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */; };
 		314B9C1E1BC22CBA00DD7E2E /* ManageAccountsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */; };
 		314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */; };
+		314C9B781DD95C5E007C315E /* TweetsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C9B771DD95C5E007C315E /* TweetsClass.swift */; };
+		314C9B7B1DD99C29007C315E /* TweetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C9B7A1DD99C29007C315E /* TweetLocation.swift */; };
 		315379851C1408730010F544 /* BluePlusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 315379841C1408730010F544 /* BluePlusIcon.png */; };
+		31605FEB1DDC302B00C8234F /* TweetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31605FEA1DDC302B00C8234F /* TweetUser.swift */; };
+		31605FED1DDC367D00C8234F /* Star Trek Gesture Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FEC1DDC367D00C8234F /* Star Trek Gesture Filled-50.png */; };
+		31605FF11DDC3A6C00C8234F /* Cave-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FF01DDC3A6C00C8234F /* Cave-50.png */; };
+		31605FF51DDC3B1200C8234F /* Filter Filled-28.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FF41DDC3B1200C8234F /* Filter Filled-28.png */; };
+		31605FF71DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31605FF61DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift */; };
+		31605FF91DDC45CD00C8234F /* Area Chart-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FF81DDC45CD00C8234F /* Area Chart-30.png */; };
+		31605FFB1DDC46DE00C8234F /* Line Chart Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */; };
+		31605FFD1DDC476A00C8234F /* ShowTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */; };
+		3160600A1DDC4B0A00C8234F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316060051DDC4A4F00C8234F /* Charts.framework */; };
+		3160600B1DDC4B0A00C8234F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316060051DDC4A4F00C8234F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088D1BAE371500435A9A /* AppDelegate.swift */; };
 		317708931BAE371500435A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708911BAE371500435A9A /* Main.storyboard */; };
 		317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317708941BAE371500435A9A /* FootballNews.xcdatamodeld */; };
@@ -54,6 +66,51 @@
 		31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B571DC121100045CC1F /* Cousine-Regular.ttf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		316060041DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		316060061DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		316060081DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		3160600C1DDC4B0A00C8234F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3160600E1DDC4B0A00C8234F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3160600B1DDC4B0A00C8234F /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		310009B51DC4022500C951CC /* ColorsAndFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		31026D721C0AB4CC00DBF415 /* PlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlusIcon.png; sourceTree = "<group>"; };
@@ -73,7 +130,18 @@
 		314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamUpdatesViewController.swift; sourceTree = "<group>"; };
 		314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageAccountsIcon.png; sourceTree = "<group>"; };
 		314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ManageTeamsIcon2.png; sourceTree = "<group>"; };
+		314C9B771DD95C5E007C315E /* TweetsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsClass.swift; sourceTree = "<group>"; };
+		314C9B7A1DD99C29007C315E /* TweetLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocation.swift; sourceTree = "<group>"; };
 		315379841C1408730010F544 /* BluePlusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePlusIcon.png; sourceTree = "<group>"; };
+		31605FEA1DDC302B00C8234F /* TweetUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetUser.swift; sourceTree = "<group>"; };
+		31605FEC1DDC367D00C8234F /* Star Trek Gesture Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star Trek Gesture Filled-50.png"; sourceTree = "<group>"; };
+		31605FF01DDC3A6C00C8234F /* Cave-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cave-50.png"; sourceTree = "<group>"; };
+		31605FF41DDC3B1200C8234F /* Filter Filled-28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filter Filled-28.png"; sourceTree = "<group>"; };
+		31605FF61DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredTweetsTableViewController.swift; sourceTree = "<group>"; };
+		31605FF81DDC45CD00C8234F /* Area Chart-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Area Chart-30.png"; sourceTree = "<group>"; };
+		31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line Chart Filled-30.png"; sourceTree = "<group>"; };
+		31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTrendViewController.swift; sourceTree = "<group>"; };
+		31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		3177088A1BAE371500435A9A /* FootballNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3177088D1BAE371500435A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317708921BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */,
+				3160600A1DDC4B0A00C8234F /* Charts.framework in Frameworks */,
 				3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */,
 				3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */,
 			);
@@ -126,6 +195,23 @@
 				310009B51DC4022500C951CC /* ColorsAndFonts.swift */,
 			);
 			name = ColorsAndSettings;
+			sourceTree = "<group>";
+		};
+		314C9B791DD99C02007C315E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		31605FFF1DDC4A4E00C8234F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				316060051DDC4A4F00C8234F /* Charts.framework */,
+				316060071DDC4A4F00C8234F /* ChartsRealm.framework */,
+				316060091DDC4A4F00C8234F /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		317708811BAE371500435A9A = {
@@ -147,6 +233,8 @@
 		3177088C1BAE371500435A9A /* FootballNews */ = {
 			isa = PBXGroup;
 			children = (
+				31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */,
+				314C9B791DD99C02007C315E /* Utilities */,
 				3199E6781DC67D0000B6C6C7 /* Fabric.framework */,
 				3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */,
 				3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */,
@@ -154,7 +242,7 @@
 				310009B41DC401C200C951CC /* ColorsAndSettings */,
 				31F73B431DC11F580045CC1F /* Fonts */,
 				3189091B1DBD990F004B7184 /* SWRevealViewController */,
-				31DE3C151BF07262009BF7CF /* CoreDataModel */,
+				31DE3C151BF07262009BF7CF /* Model */,
 				319FD0391BC10AC200801B31 /* ViewControllers */,
 				31AD77971BAE7ABF00F77E48 /* Assets */,
 				3177088D1BAE371500435A9A /* AppDelegate.swift */,
@@ -187,6 +275,8 @@
 				31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */,
 				311F33121DC15E53003395AB /* DetailViewController.swift */,
 				3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */,
+				31605FF61DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift */,
+				31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +284,11 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */,
+				31605FF81DDC45CD00C8234F /* Area Chart-30.png */,
+				31605FF41DDC3B1200C8234F /* Filter Filled-28.png */,
+				31605FF01DDC3A6C00C8234F /* Cave-50.png */,
+				31605FEC1DDC367D00C8234F /* Star Trek Gesture Filled-50.png */,
 				3121BF421DC834BF00429727 /* Contact Card Filled-50.png */,
 				3121BF401DC833E800429727 /* User Groups-50.png */,
 				3121BF3E1DC8334F00429727 /* Twitter Filled-50.png */,
@@ -217,14 +312,17 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		31DE3C151BF07262009BF7CF /* CoreDataModel */ = {
+		31DE3C151BF07262009BF7CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				31DE3C111BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift */,
 				31DE3C121BF07246009BF7CF /* TeamAndSource.swift */,
 				31DE3C161BF0766E009BF7CF /* SelectedTeamAndSource.swift */,
+				314C9B7A1DD99C29007C315E /* TweetLocation.swift */,
+				314C9B771DD95C5E007C315E /* TweetsClass.swift */,
+				31605FEA1DDC302B00C8234F /* TweetUser.swift */,
 			);
-			name = CoreDataModel;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		31F73B431DC11F580045CC1F /* Fonts */ = {
@@ -250,10 +348,12 @@
 				317708871BAE371500435A9A /* Frameworks */,
 				317708881BAE371500435A9A /* Resources */,
 				3199E6771DC67CA600B6C6C7 /* ShellScript */,
+				3160600E1DDC4B0A00C8234F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3160600D1DDC4B0A00C8234F /* PBXTargetDependency */,
 			);
 			name = FootballNews;
 			productName = FootballNews;
@@ -292,12 +392,42 @@
 			mainGroup = 317708811BAE371500435A9A;
 			productRefGroup = 3177088B1BAE371500435A9A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 31605FFF1DDC4A4E00C8234F /* Products */;
+					ProjectRef = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				317708891BAE371500435A9A /* FootballNews */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		316060051DDC4A4F00C8234F /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 316060041DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		316060071DDC4A4F00C8234F /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 316060061DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		316060091DDC4A4F00C8234F /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 316060081DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		317708881BAE371500435A9A /* Resources */ = {
@@ -311,6 +441,7 @@
 				3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */,
 				314B9C201BC22EEF00DD7E2E /* ManageTeamsIcon2.png in Resources */,
 				3121BF3D1DC831D900429727 /* Twitter-50.png in Resources */,
+				31605FED1DDC367D00C8234F /* Star Trek Gesture Filled-50.png in Resources */,
 				31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */,
 				317708981BAE371500435A9A /* Assets.xcassets in Resources */,
 				3121BF3F1DC8334F00429727 /* Twitter Filled-50.png in Resources */,
@@ -318,10 +449,12 @@
 				31026D731C0AB4CC00DBF415 /* PlusIcon.png in Resources */,
 				31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */,
 				311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */,
+				31605FF11DDC3A6C00C8234F /* Cave-50.png in Resources */,
 				313A07D91BB8EB3700889396 /* SettingsBlue.png in Resources */,
 				31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */,
 				31F73B421DC11A8B0045CC1F /* Previous-48.png in Resources */,
 				31F73B581DC121100045CC1F /* Cousine-Bold.ttf in Resources */,
+				31605FFB1DDC46DE00C8234F /* Line Chart Filled-30.png in Resources */,
 				31F73B531DC121000045CC1F /* RussoOne-Regular.ttf in Resources */,
 				310708E41DC0764B00C05881 /* Spider-Man Head-48.png in Resources */,
 				315379851C1408730010F544 /* BluePlusIcon.png in Resources */,
@@ -332,6 +465,8 @@
 				31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */,
 				3121BF411DC833E800429727 /* User Groups-50.png in Resources */,
 				310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */,
+				31605FF51DDC3B1200C8234F /* Filter Filled-28.png in Resources */,
+				31605FF91DDC45CD00C8234F /* Area Chart-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +493,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31605FF71DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift in Sources */,
+				314C9B7B1DD99C29007C315E /* TweetLocation.swift in Sources */,
 				311F33131DC15E53003395AB /* DetailViewController.swift in Sources */,
 				3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */,
 				3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */,
 				31DE3C171BF0766E009BF7CF /* SelectedTeamAndSource.swift in Sources */,
+				314C9B781DD95C5E007C315E /* TweetsClass.swift in Sources */,
 				31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */,
 				31DE3C141BF07246009BF7CF /* TeamAndSource.swift in Sources */,
 				314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */,
@@ -371,11 +509,21 @@
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
 				310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */,
+				31605FFD1DDC476A00C8234F /* ShowTrendViewController.swift in Sources */,
 				31DE3C131BF07246009BF7CF /* TeamAnSource+CoreDataProperties.swift in Sources */,
+				31605FEB1DDC302B00C8234F /* TweetUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3160600D1DDC4B0A00C8234F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 3160600C1DDC4B0A00C8234F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		317708911BAE371500435A9A /* Main.storyboard */ = {
@@ -488,6 +636,7 @@
 		317708A01BAE371500435A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -512,6 +661,7 @@
 		317708A11BAE371500435A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
