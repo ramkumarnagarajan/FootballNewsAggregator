@@ -13,42 +13,11 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     var strTwitterSource : String = ""
     var strSourceName : String = ""
     var blnIsFiltersDisplayed : Bool = false
-    var txtSourceName:UITextField = UITextField()
-    var txtSourceURL : UITextField = UITextField()
     
-    
-    @IBAction func showFilterOptions(_ sender: AnyObject) {
-        print("Add Button Pressed")
-        //Show an alert to display 3 text boxes and 2 buttons
-        //
-        let alertSaveButton = UIAlertAction(title: "Save", style: UIAlertActionStyle.default, handler: nil)
-        let alertCancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
-        let alert = UIAlertController(title: "Pick Your Filters", message: nil, preferredStyle: UIAlertControllerStyle.alert)
-        
-        
-        alert.addTextField(configurationHandler: configureSourceNameTextField)
-        alert.addTextField(configurationHandler: configureSourceURLTextField)
-        
-        alert.addAction(alertSaveButton)
-        alert.addAction(alertCancel)
-        
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func configureSourceURLTextField(_ textField: UITextField!)
-    {
-        textField.placeholder="Enter Source URL/Twitter ScreenName"
-        self.txtSourceURL = textField
-    }
-    
-    func configureSourceNameTextField(_ textField: UITextField!)
-    {
-        textField.placeholder="Enter Source Name"
-        self.txtSourceName = textField
-    }
-    
+    var txtTweetContainsWordOrHashTag : UITextField = UITextField()
+    var txtMood : UITextField = UITextField()
+    var txtSinceDate : UITextField = UITextField()
 
-    
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
@@ -56,27 +25,27 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
     let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Filters For \(strTwitterSource)"
-        setDataSource()
+        setDataSource(strTwitterQuery: self.strTwitterSource)
     }
 
-    func setDataSource()
+    func setDataSource(strTwitterQuery:String)
     {
         let client = TWTRAPIClient()
-        if(self.strTwitterSource.contains("@"))
+        print("$$$$$$$ \(strTwitterQuery) ")
+        if(strTwitterQuery.hasPrefix("@"))
         {
-            let ds = TWTRUserTimelineDataSource(screenName: self.strTwitterSource, apiClient: client)
+            let ds = TWTRUserTimelineDataSource(screenName: strTwitterQuery, apiClient: client)
             self.dataSource = ds
         }
         else
         {
-            let ds = TWTRSearchTimelineDataSource(searchQuery: self.strTwitterSource, apiClient: client)
+            let ds = TWTRSearchTimelineDataSource(searchQuery: strTwitterQuery, apiClient: client)
             self.dataSource = ds
         }
+        self.tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,5 +58,69 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showFilterOptions(_ sender: AnyObject) {
+        let alertSaveButton = UIAlertAction(title: "Apply Filters", style: UIAlertActionStyle.default, handler:addFilters)
+        let alertCancel = UIAlertAction(title: "Clear", style: UIAlertActionStyle.cancel, handler: clearFilters)
+        let alert = UIAlertController(title: "Pick Your Filters", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        alert.addTextField(configurationHandler: configureSourceNameTextField)
+        alert.addTextField(configurationHandler: configureSourceURLTextField)
+        alert.addTextField(configurationHandler: configureSinceDateTextField)
+        
+        alert.addAction(alertSaveButton)
+        alert.addAction(alertCancel)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     
+    func configureSourceURLTextField(_ textField: UITextField!)
+    {
+        textField.placeholder="Enter Mood [Eg: :) Or :( ]"
+        self.txtMood = textField
+    }
+    
+    func configureSinceDateTextField(_ textField: UITextField!)
+    {
+        textField.placeholder="YYYY-MM-DD"
+        self.txtSinceDate = textField
+    }
+    
+    func configureSourceNameTextField(_ textField: UITextField!)
+    {
+        textField.placeholder="Contains Word or HashTag"
+        self.txtTweetContainsWordOrHashTag = textField
+    }
+    
+    func addFilters(_ alertActionSave: UIAlertAction!)
+    {
+        let strCurrentTwitterSource = self.strTwitterSource
+        let strMood : String? = self.txtMood.text
+        let strContains : String? = self.txtTweetContainsWordOrHashTag.text
+        let strSinceDate : String? = self.txtSinceDate.text
+        let updatedQuery : NSMutableString = NSMutableString(string:strCurrentTwitterSource)
+        if(strMood != nil)
+        {
+            updatedQuery.insert(" " , at: 0)
+            updatedQuery.append(strMood!)
+            updatedQuery.append(" ")
+        }
+        if(strContains != nil)
+        {
+            updatedQuery.append(strContains!)
+            updatedQuery.append(" ")
+        }
+        if(strSinceDate != nil)
+        {
+            updatedQuery.append(strSinceDate!)
+        }
+        
+        setDataSource(strTwitterQuery: updatedQuery.substring(from: 0))
+        
+    }
+    
+    func clearFilters(_ alertActionCancel : UIAlertAction!)
+    {
+        setDataSource(strTwitterQuery: self.strTwitterSource)
+    }
 }

@@ -38,10 +38,8 @@ class TwitterFeedViewController: TWTRTimelineViewController {
                 print("signed in as \(session?.userName)");
                 self.userId = (session?.userID)!
                 
-                if(self.strScreenName.contains("@"))
+                if(self.strScreenName.hasPrefix("@"))
                 {
-//                    self.getRestAPIData(twitterHandle: self.strScreenName)
-//                    
                     let ds = TWTRUserTimelineDataSource(screenName: self.strScreenName, apiClient: client)
                     self.dataSource = ds
                 }
