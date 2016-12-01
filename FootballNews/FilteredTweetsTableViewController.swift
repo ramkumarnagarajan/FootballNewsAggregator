@@ -61,6 +61,7 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     @IBAction func showFilterOptions(_ sender: AnyObject) {
         let alertSaveButton = UIAlertAction(title: "Apply Filters", style: UIAlertActionStyle.default, handler:addFilters)
         let alertCancel = UIAlertAction(title: "Clear", style: UIAlertActionStyle.cancel, handler: clearFilters)
+        
         let alert = UIAlertController(title: "Pick Your Filters", message: nil, preferredStyle: UIAlertControllerStyle.alert)
         
         
@@ -99,19 +100,21 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         let strContains : String? = self.txtTweetContainsWordOrHashTag.text
         let strSinceDate : String? = self.txtSinceDate.text
         let updatedQuery : NSMutableString = NSMutableString(string:strCurrentTwitterSource)
-        if(strMood != nil)
+        if(!strMood!.isEmpty)
         {
-            updatedQuery.insert(" " , at: 0)
+            updatedQuery.insert(" " , at: updatedQuery.length)
             updatedQuery.append(strMood!)
-            updatedQuery.append(" ")
+            //updatedQuery.append(" ")
         }
-        if(strContains != nil)
+        if(!strContains!.isEmpty)
         {
+            updatedQuery.insert(" " , at: updatedQuery.length)
             updatedQuery.append(strContains!)
-            updatedQuery.append(" ")
+            //updatedQuery.append(" ")
         }
-        if(strSinceDate != nil)
+        if(!strSinceDate!.isEmpty)
         {
+            updatedQuery.insert(" " , at: updatedQuery.length)
             updatedQuery.append(strSinceDate!)
         }
         

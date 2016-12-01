@@ -310,7 +310,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="aIh-Hv-hzd" kind="push" identifier="showDetail" id="MeE-Da-LeX"/>
+                                            <segue destination="F98-g4-22O" kind="push" identifier="showTwitterDetail" id="7He-jd-eNL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -336,7 +336,6 @@
                     <connections>
                         <outlet property="menuButton" destination="WyN-JX-9iK" id="E2D-8b-JNj"/>
                         <outlet property="tableView" destination="Tx2-zr-cCr" id="7hw-TE-4CG"/>
-                        <segue destination="Uv7-kU-g0U" kind="push" identifier="showTwitterDetail" id="lE0-ee-b3j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHk-XI-zJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -394,7 +393,7 @@
         <!--Updates For ....-->
         <scene sceneID="OXg-1F-oXp">
             <objects>
-                <viewController id="aIh-Hv-hzd" customClass="DetailViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="aIh-Hv-hzd" customClass="DetailViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LTf-r8-kbC"/>
                         <viewControllerLayoutGuide type="bottom" id="89r-Ja-tPf"/>
@@ -449,6 +448,7 @@
                             <outlet property="delegate" destination="F98-g4-22O" id="7nr-eR-53f"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Ea5-U0-XFh">
                         <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="bxj-GO-4DQ">
                             <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -456,17 +456,25 @@
                                 <segue destination="960-BB-RbQ" kind="push" id="tt2-ru-nmi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Filter Filled-28.png" id="1PU-gd-sUX">
-                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="showFilterOptions:" destination="F98-g4-22O" id="w9w-l4-k9y"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="Filter Filled-28.png" id="1PU-gd-sUX">
+                                <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="showFilterOptions:" destination="F98-g4-22O" id="w9w-l4-k9y"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Line Chart Filled-30.png" id="3mQ-K9-Y0i">
+                                <connections>
+                                    <segue destination="nR5-6G-tcu" kind="push" id="Ofw-Iz-1TM"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLi-E2-4JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="1760"/>
+            <point key="canvasLocation" x="-2656" y="510"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XnC-I4-iTT">
@@ -501,8 +509,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I0R-Dr-FVo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="75a-A9-Wz1"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6bA-19-Fce">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -526,8 +532,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCu-u7-E85" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9rO-ba-RIX"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wb8-hE-A61">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -545,64 +549,12 @@
             </objects>
             <point key="canvasLocation" x="-942" y="-2011"/>
         </scene>
-        <!--Twitter Feed View Controller-->
-        <scene sceneID="Ztm-2x-UTy">
-            <objects>
-                <tableViewController id="Uv7-kU-g0U" customClass="TwitterFeedViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="N0S-bH-s7a">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="odp-9q-lhU">
-                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odp-9q-lhU" id="un1-qJ-wy8">
-                                    <frame key="frameInset" width="768" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Uv7-kU-g0U" id="rVZ-Ys-OiE"/>
-                            <outlet property="delegate" destination="Uv7-kU-g0U" id="lYf-bx-6Fd"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="ois-Pl-48h">
-                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="eqT-G4-G8e">
-                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="960-BB-RbQ" kind="push" id="k5A-ZR-kVC"/>
-                            </connections>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="Filter Filled-28.png" id="CM0-jY-wYB">
-                                <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="gotoFilteredTweets:" destination="Uv7-kU-g0U" id="qnF-vB-nmf"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem image="Line Chart Filled-30.png" id="w8R-hB-mdw">
-                                <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="viewGraphs:" destination="Uv7-kU-g0U" id="bIR-mz-mcz"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGC-dP-K44" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-834" y="510"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Qm-lI-pV3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pcw-HJ-ds1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Gjh-hA-CvE"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3o5-le-SDb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -620,31 +572,6 @@
             </objects>
             <point key="canvasLocation" x="141" y="486"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ZsE-FW-uYf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9P-Mt-11w" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Ohu-s2-8zR"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fJS-Pj-d95">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="17"/>
-                            <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Uv7-kU-g0U" kind="relationship" relationship="rootViewController" id="HFA-Ch-0JL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zmP-l3-cbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1814" y="510"/>
-        </scene>
         <!--Show Trend View Controller-->
         <scene sceneID="rp2-wo-xYG">
             <objects>
@@ -656,13 +583,6 @@
                     <view key="view" contentMode="scaleToFill" id="jKJ-OO-rsl">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgq-v6-FEU" customClass="BarChartView" customModule="Charts">
-                                <frame key="frameInset" minX="20" minY="170" width="323" height="405"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="901-Ah-sag">
@@ -673,22 +593,17 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="barChartView" destination="Bgq-v6-FEU" id="X1p-x7-SLu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cun-xU-cQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-814" y="1666"/>
+            <point key="canvasLocation" x="-2656" y="1695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5kM-4f-EZw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSl-ya-cgc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NCForFilteredTweetsVC" automaticallyAdjustsScrollViewInsets="NO" id="gSl-ya-cgc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="x1z-8b-GYL"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7am-yg-0HY">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -700,13 +615,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mX8-ER-mSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="1760"/>
+            <point key="canvasLocation" x="-3654" y="510"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0eM-2I-cHh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceR-r6-SN2" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sgg-0t-IuP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -718,7 +635,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H5-tN-7wT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1794" y="1666"/>
+            <point key="canvasLocation" x="-3654" y="1666"/>
         </scene>
     </scenes>
     <resources>
@@ -735,9 +652,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tt2-ru-nmi"/>
         <segue reference="Vqf-KU-I4C"/>
-        <segue reference="HFA-Ch-0JL"/>
+        <segue reference="hwa-ZM-vm7"/>
+        <segue reference="b1P-Js-CC8"/>
+        <segue reference="bl4-sm-JSA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

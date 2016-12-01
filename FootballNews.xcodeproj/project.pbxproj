@@ -36,8 +36,6 @@
 		31605FF91DDC45CD00C8234F /* Area Chart-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FF81DDC45CD00C8234F /* Area Chart-30.png */; };
 		31605FFB1DDC46DE00C8234F /* Line Chart Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */; };
 		31605FFD1DDC476A00C8234F /* ShowTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */; };
-		3160600A1DDC4B0A00C8234F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316060051DDC4A4F00C8234F /* Charts.framework */; };
-		3160600B1DDC4B0A00C8234F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316060051DDC4A4F00C8234F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177088D1BAE371500435A9A /* AppDelegate.swift */; };
 		317708931BAE371500435A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708911BAE371500435A9A /* Main.storyboard */; };
 		317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317708941BAE371500435A9A /* FootballNews.xcdatamodeld */; };
@@ -48,7 +46,6 @@
 		3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */; };
 		3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */; };
 		3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */; };
-		3199E6811DC67E8700B6C6C7 /* TwitterFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */; };
 		319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */; };
 		31AD77921BAE768000F77E48 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD77911BAE768000F77E48 /* SetupViewController.swift */; };
 		31AD77A31BAE835B00F77E48 /* LaunchScreenEPL.png in Resources */ = {isa = PBXBuildFile; fileRef = 31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */; };
@@ -88,13 +85,6 @@
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		3160600C1DDC4B0A00C8234F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,7 +94,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3160600B1DDC4B0A00C8234F /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +145,6 @@
 		3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = ../TwitterKit.framework; sourceTree = "<group>"; };
 		3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = ../TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = ../TwitterCore.framework; sourceTree = "<group>"; };
-		3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterFeedViewController.swift; sourceTree = "<group>"; };
 		319FD0351BC1085B00801B31 /* ManageTeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageTeamsViewController.swift; path = ../ManageTeamsViewController.swift; sourceTree = "<group>"; };
 		31AD77911BAE768000F77E48 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenEPL.png; sourceTree = "<group>"; };
@@ -180,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */,
-				3160600A1DDC4B0A00C8234F /* Charts.framework in Frameworks */,
 				3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */,
 				3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */,
 			);
@@ -274,7 +261,6 @@
 				314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */,
 				31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */,
 				311F33121DC15E53003395AB /* DetailViewController.swift */,
-				3199E6801DC67E8700B6C6C7 /* TwitterFeedViewController.swift */,
 				31605FF61DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift */,
 				31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */,
 			);
@@ -353,7 +339,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3160600D1DDC4B0A00C8234F /* PBXTargetDependency */,
 			);
 			name = FootballNews;
 			productName = FootballNews;
@@ -505,7 +490,6 @@
 				314150D31DBF2F360003E5AA /* TeamUpdatesViewController.swift in Sources */,
 				31AE43F71DBF3CE4005F29A9 /* CreditsViewController.swift in Sources */,
 				319FD0361BC1085B00801B31 /* ManageTeamsViewController.swift in Sources */,
-				3199E6811DC67E8700B6C6C7 /* TwitterFeedViewController.swift in Sources */,
 				3177088E1BAE371500435A9A /* AppDelegate.swift in Sources */,
 				317708961BAE371500435A9A /* FootballNews.xcdatamodeld in Sources */,
 				310009B61DC4022500C951CC /* ColorsAndFonts.swift in Sources */,
@@ -516,14 +500,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3160600D1DDC4B0A00C8234F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 3160600C1DDC4B0A00C8234F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		317708911BAE371500435A9A /* Main.storyboard */ = {
@@ -646,7 +622,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -671,7 +647,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -207,9 +207,9 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             
             if(identifier.contains("showTwitterDetail"))
             {
-                let detailVC = segue.destination as! TwitterFeedViewController
-                detailVC.strScreenName = strSourceURL
-                detailVC.strTeamName = strTeamName
+                let detailVC = segue.destination as! FilteredTweetsTableViewController
+                detailVC.strTwitterSource = strSourceURL
+                detailVC.strSourceName = strTeamName
                 
                 print("Prepare for segue called")
                 
