@@ -25,6 +25,8 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
     let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
     
+    @IBOutlet weak var btnShowTrends: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Filters For \(strTwitterSource)"
@@ -51,6 +53,10 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         TWTRTweetView.appearance().theme = .dark
+        if(self.strTwitterSource.hasPrefix("@"))
+        {
+            btnShowTrends.isEnabled = false
+        }
     }
     
     override func didReceiveMemoryWarning() {

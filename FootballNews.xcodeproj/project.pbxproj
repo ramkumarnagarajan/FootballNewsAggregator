@@ -61,29 +61,38 @@
 		31F73B591DC121100045CC1F /* Cousine-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B551DC121100045CC1F /* Cousine-BoldItalic.ttf */; };
 		31F73B5A1DC121100045CC1F /* Cousine-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B561DC121100045CC1F /* Cousine-Italic.ttf */; };
 		31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31F73B571DC121100045CC1F /* Cousine-Regular.ttf */; };
+		31FF654C1DF10ED800F368E6 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FF65471DF10E6F00F368E6 /* Charts.framework */; };
+		31FF654D1DF10ED800F368E6 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31FF65471DF10E6F00F368E6 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		316060041DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+		31FF65461DF10E6F00F368E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			containerPortal = 31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		316060061DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+		31FF65481DF10E6F00F368E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			containerPortal = 31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		316060081DDC4A4F00C8234F /* PBXContainerItemProxy */ = {
+		31FF654A1DF10E6F00F368E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+			containerPortal = 31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
+		};
+		31FF654E1DF10ED800F368E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,6 +103,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				31FF654D1DF10ED800F368E6 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +140,6 @@
 		31605FF81DDC45CD00C8234F /* Area Chart-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Area Chart-30.png"; sourceTree = "<group>"; };
 		31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line Chart Filled-30.png"; sourceTree = "<group>"; };
 		31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTrendViewController.swift; sourceTree = "<group>"; };
-		31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		3177088A1BAE371500435A9A /* FootballNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3177088D1BAE371500435A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317708921BAE371500435A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +169,7 @@
 		31F73B551DC121100045CC1F /* Cousine-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-BoldItalic.ttf"; sourceTree = "<group>"; };
 		31F73B561DC121100045CC1F /* Cousine-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Italic.ttf"; sourceTree = "<group>"; };
 		31F73B571DC121100045CC1F /* Cousine-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Regular.ttf"; sourceTree = "<group>"; };
+		31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */,
+				31FF654C1DF10ED800F368E6 /* Charts.framework in Frameworks */,
 				3199E67F1DC67D0000B6C6C7 /* TwitterCore.framework in Frameworks */,
 				3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */,
 			);
@@ -191,16 +202,6 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
-		31605FFF1DDC4A4E00C8234F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				316060051DDC4A4F00C8234F /* Charts.framework */,
-				316060071DDC4A4F00C8234F /* ChartsRealm.framework */,
-				316060091DDC4A4F00C8234F /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		317708811BAE371500435A9A = {
 			isa = PBXGroup;
 			children = (
@@ -220,14 +221,13 @@
 		3177088C1BAE371500435A9A /* FootballNews */ = {
 			isa = PBXGroup;
 			children = (
-				31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */,
+				31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */,
 				314C9B791DD99C02007C315E /* Utilities */,
 				3199E6781DC67D0000B6C6C7 /* Fabric.framework */,
 				3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */,
 				3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */,
 				3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */,
 				310009B41DC401C200C951CC /* ColorsAndSettings */,
-				31F73B431DC11F580045CC1F /* Fonts */,
 				3189091B1DBD990F004B7184 /* SWRevealViewController */,
 				31DE3C151BF07262009BF7CF /* Model */,
 				319FD0391BC10AC200801B31 /* ViewControllers */,
@@ -270,30 +270,8 @@
 		31AD77971BAE7ABF00F77E48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */,
-				31605FF81DDC45CD00C8234F /* Area Chart-30.png */,
-				31605FF41DDC3B1200C8234F /* Filter Filled-28.png */,
-				31605FF01DDC3A6C00C8234F /* Cave-50.png */,
-				31605FEC1DDC367D00C8234F /* Star Trek Gesture Filled-50.png */,
-				3121BF421DC834BF00429727 /* Contact Card Filled-50.png */,
-				3121BF401DC833E800429727 /* User Groups-50.png */,
-				3121BF3E1DC8334F00429727 /* Twitter Filled-50.png */,
-				3121BF3C1DC831D900429727 /* Twitter-50.png */,
-				311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */,
-				311F33101DC1585A003395AB /* LiverpoolAllBlack.png */,
-				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
-				31F73B3D1DC111880045CC1F /* Menu-48.png */,
-				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
-				310708E21DC0764B00C05881 /* Spider-Man Head-48.png */,
-				315379841C1408730010F544 /* BluePlusIcon.png */,
-				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
-				313A07E01BB9176800889396 /* settings icon 2.png */,
-				314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */,
-				314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */,
-				313A07D81BB8EB3700889396 /* SettingsBlue.png */,
-				31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */,
-				313A07E81BB91D8000889396 /* facebook_logo.png */,
-				31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */,
+				31F73B431DC11F580045CC1F /* Fonts */,
+				31FF65501DF10F0D00F368E6 /* Images */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -323,6 +301,47 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		31FF65411DF10E6F00F368E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31FF65471DF10E6F00F368E6 /* Charts.framework */,
+				31FF65491DF10E6F00F368E6 /* ChartsRealm.framework */,
+				31FF654B1DF10E6F00F368E6 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31FF65501DF10F0D00F368E6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */,
+				31605FF81DDC45CD00C8234F /* Area Chart-30.png */,
+				31605FF41DDC3B1200C8234F /* Filter Filled-28.png */,
+				31605FF01DDC3A6C00C8234F /* Cave-50.png */,
+				31605FEC1DDC367D00C8234F /* Star Trek Gesture Filled-50.png */,
+				3121BF421DC834BF00429727 /* Contact Card Filled-50.png */,
+				3121BF401DC833E800429727 /* User Groups-50.png */,
+				3121BF3E1DC8334F00429727 /* Twitter Filled-50.png */,
+				3121BF3C1DC831D900429727 /* Twitter-50.png */,
+				311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */,
+				311F33101DC1585A003395AB /* LiverpoolAllBlack.png */,
+				31F73B411DC11A8B0045CC1F /* Previous-48.png */,
+				31F73B3D1DC111880045CC1F /* Menu-48.png */,
+				310708E11DC0764B00C05881 /* Ninja Head-48.png */,
+				310708E21DC0764B00C05881 /* Spider-Man Head-48.png */,
+				315379841C1408730010F544 /* BluePlusIcon.png */,
+				31026D721C0AB4CC00DBF415 /* PlusIcon.png */,
+				313A07E01BB9176800889396 /* settings icon 2.png */,
+				314B9C1F1BC22EEF00DD7E2E /* ManageTeamsIcon2.png */,
+				314B9C1D1BC22CBA00DD7E2E /* ManageAccountsIcon.png */,
+				313A07D81BB8EB3700889396 /* SettingsBlue.png */,
+				31AD77A61BAE852D00F77E48 /* LiverpoolTeamLogo.png */,
+				313A07E81BB91D8000889396 /* facebook_logo.png */,
+				31AD77A21BAE835B00F77E48 /* LaunchScreenEPL.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +358,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				31FF654F1DF10ED800F368E6 /* PBXTargetDependency */,
 			);
 			name = FootballNews;
 			productName = FootballNews;
@@ -379,8 +399,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 31605FFF1DDC4A4E00C8234F /* Products */;
-					ProjectRef = 31605FFE1DDC4A4E00C8234F /* Charts.xcodeproj */;
+					ProductGroup = 31FF65411DF10E6F00F368E6 /* Products */;
+					ProjectRef = 31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -391,25 +411,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		316060051DDC4A4F00C8234F /* Charts.framework */ = {
+		31FF65471DF10E6F00F368E6 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 316060041DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			remoteRef = 31FF65461DF10E6F00F368E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		316060071DDC4A4F00C8234F /* ChartsRealm.framework */ = {
+		31FF65491DF10E6F00F368E6 /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = 316060061DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			remoteRef = 31FF65481DF10E6F00F368E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		316060091DDC4A4F00C8234F /* ChartsTests.xctest */ = {
+		31FF654B1DF10E6F00F368E6 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 316060081DDC4A4F00C8234F /* PBXContainerItemProxy */;
+			remoteRef = 31FF654A1DF10E6F00F368E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -500,6 +520,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31FF654F1DF10ED800F368E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 31FF654E1DF10ED800F368E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		317708911BAE371500435A9A /* Main.storyboard */ = {
