@@ -16,7 +16,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
     let tableCellTextColor = UIColor(red: 138/256, green: 139/256, blue: 142/256, alpha: 1)
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
-    let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
+    let tableBackgroundImage = UIImage(named: "BlackBackground.png")
     
     //Class Variables
     let allTeams : [Team] = Team().getStoredObjects("")
@@ -52,9 +52,9 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         definesPresentationContext=true
         tableView.tableHeaderView=searchController.searchBar
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellMain")
-        self.tableView.backgroundColor=UIColor.black
+        //self.tableView.backgroundColor=UIColor.black
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
-
+        self.navigationController?.navigationBar.isOpaque = true
         if revealViewController() != nil
         {
             menuButton.target = self.revealViewController()
@@ -68,7 +68,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
-        self.tableView.backgroundColor=bodyBackgroundColor
+        //self.tableView.backgroundColor=bodyBackgroundColor
         let imageView = UIImageView(image: tableBackgroundImage)
         imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
@@ -138,14 +138,14 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             
         }
         cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
-        cell.backgroundColor=bodyBackgroundColor
+        cell.backgroundColor=UIColor.clear
         cell.textLabel?.textColor = tableCellTextColor
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = bodyBackgroundColor.withAlphaComponent(0.5)
+        //cell.backgroundColor = bodyBackgroundColor.withAlphaComponent(1)
         
     }
     

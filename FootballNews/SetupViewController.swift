@@ -49,10 +49,8 @@ class SetupViewController : UIViewController
         Twitter.sharedInstance().logIn { session, error in
             if (session != nil) {
                 print("signed in as \(session?.userName)");
-                self.lblUserName.text = session?.userID
             } else {
                 print("error: \(error?.localizedDescription)");
-                self.lblUserName.text = "User Session expired, retry.."
             }
         }
     }

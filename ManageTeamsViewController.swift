@@ -17,7 +17,7 @@ class ManageTeamsViewController: UITableViewController {
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
     let tableCellTextColor = UIColor(red: 138/256, green: 139/256, blue: 142/256, alpha: 1)
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
-    let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
+    let tableBackgroundImage = UIImage(named: "BlackBackground.png")
     
     //Class Variables
     var txtTeamName:UITextField = UITextField()
@@ -26,8 +26,6 @@ class ManageTeamsViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
-        self.view.backgroundColor = bodyBackgroundColor
-        self.tableView.backgroundColor=bodyBackgroundColor
         let imageView = UIImageView(image: tableBackgroundImage)
         imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
@@ -168,7 +166,7 @@ class ManageTeamsViewController: UITableViewController {
         //let cell = (tableView.dequeueReusableCellWithIdentifier("CellIdentifier"))! as UITableViewCell
         let teams : [Team] = Team().getStoredObjects("")
         let cell = UITableViewCell()
-        cell.backgroundColor=bodyBackgroundColor
+        //cell.backgroundColor=bodyBackgroundColor
         cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
         cell.textLabel?.textColor = tableCellTextColor
         // Configure the cell...
@@ -180,6 +178,7 @@ class ManageTeamsViewController: UITableViewController {
             
             cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
         }
+        cell.backgroundColor = UIColor.clear
         return cell
     }
     

@@ -49,7 +49,7 @@ class SlideMenuViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,17 +75,6 @@ class SlideMenuViewController: UITableViewController {
             cellImage = UIImage(named: "Contact Card Filled-50.png")
             cell.textLabel?.text = "Developer Credits"
         }
-        if(indexPath.row == 3)
-        {
-            cellImage = UIImage(named: "Twitter Filled-50.png")
-            cell.textLabel?.text = "Tweets Filters"
-        }
-        if(indexPath.row == 4)
-        {
-            cellImage = UIImage(named: "Star Trek Gesture Filled-50.png")
-            cell.textLabel?.text = "Change Background"
-        }
-        
         cell.imageView?.image = cellImage
         
         return cell

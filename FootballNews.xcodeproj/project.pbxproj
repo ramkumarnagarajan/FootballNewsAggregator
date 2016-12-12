@@ -42,6 +42,7 @@
 		317708981BAE371500435A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317708971BAE371500435A9A /* Assets.xcassets */; };
 		3177089B1BAE371500435A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317708991BAE371500435A9A /* LaunchScreen.storyboard */; };
 		3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3189091E1DBD9945004B7184 /* SWRevealViewController.m */; };
+		31891A181DFE84A3006838DB /* BlackBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 31891A171DFE84A3006838DB /* BlackBackground.png */; };
 		3199E67C1DC67D0000B6C6C7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E6781DC67D0000B6C6C7 /* Fabric.framework */; };
 		3199E67D1DC67D0000B6C6C7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */; };
 		3199E67E1DC67D0000B6C6C7 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */; };
@@ -150,6 +151,7 @@
 		3189091C1DBD9944004B7184 /* FootballNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootballNews-Bridging-Header.h"; sourceTree = "<group>"; };
 		3189091D1DBD9945004B7184 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		3189091E1DBD9945004B7184 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		31891A171DFE84A3006838DB /* BlackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackBackground.png; sourceTree = "<group>"; };
 		3199E6781DC67D0000B6C6C7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = ../TwitterKit.framework; sourceTree = "<group>"; };
 		3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = ../TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		31FF65501DF10F0D00F368E6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				31891A171DFE84A3006838DB /* BlackBackground.png */,
 				31605FFA1DDC46DE00C8234F /* Line Chart Filled-30.png */,
 				31605FF81DDC45CD00C8234F /* Area Chart-30.png */,
 				31605FF41DDC3B1200C8234F /* Filter Filled-28.png */,
@@ -376,7 +379,6 @@
 				TargetAttributes = {
 					317708891BAE371500435A9A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 67B4FC7A84;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -470,6 +472,7 @@
 				31F73B5B1DC121100045CC1F /* Cousine-Regular.ttf in Resources */,
 				3121BF411DC833E800429727 /* User Groups-50.png in Resources */,
 				310708E31DC0764B00C05881 /* Ninja Head-48.png in Resources */,
+				31891A181DFE84A3006838DB /* BlackBackground.png in Resources */,
 				31605FF51DDC3B1200C8234F /* Filter Filled-28.png in Resources */,
 				31605FF91DDC45CD00C8234F /* Area Chart-30.png in Resources */,
 			);
@@ -645,12 +648,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 67B4FC7A84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -670,12 +674,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 67B4FC7A84;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FootballNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CIS321.FootballNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
