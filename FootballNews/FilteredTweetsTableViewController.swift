@@ -17,7 +17,8 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     var txtTweetContainsWordOrHashTag : UITextField = UITextField()
     var txtMood : UITextField = UITextField()
     var txtSinceDate : UITextField = UITextField()
-
+    var txtLocation : UITextField = UITextField()
+    
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
@@ -74,12 +75,20 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         alert.addTextField(configurationHandler: configureSourceNameTextField)
         alert.addTextField(configurationHandler: configureSourceURLTextField)
         alert.addTextField(configurationHandler: configureSinceDateTextField)
+        alert.addTextField(configurationHandler: configureLocationTextField)
         
         alert.addAction(alertSaveButton)
         alert.addAction(alertCancel)
         
         self.present(alert, animated: true, completion: nil)
     }
+
+    func configureLocationTextField(_ textField: UITextField!)
+    {
+        textField.placeholder="Enter location [Eg: SF]"
+        self.txtLocation = textField
+    }
+
     
     func configureSourceURLTextField(_ textField: UITextField!)
     {

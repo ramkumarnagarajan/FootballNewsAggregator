@@ -49,7 +49,7 @@ class SlideMenuViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,7 +58,7 @@ class SlideMenuViewController: UITableViewController {
         cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
         cell.backgroundColor = bodyBackgroundColor
         cell.textLabel?.textColor = tableCellTextColor
-        cell.textLabel?.text = "Hilllllo"
+        cell.textLabel?.text = ""
         var cellImage = UIImage(named: "LiverpoolAllBlack.png")
         if(indexPath.row == 0)
         {
@@ -74,6 +74,11 @@ class SlideMenuViewController: UITableViewController {
         {
             cellImage = UIImage(named: "Contact Card Filled-50.png")
             cell.textLabel?.text = "Developer Credits"
+        }
+        if(indexPath.row == 3)
+        {
+            cellImage = UIImage(named: "Hashtag Activity Grid-48.png")
+            cell.textLabel?.text = "Show Trending"
         }
         cell.imageView?.image = cellImage
         
@@ -95,6 +100,11 @@ class SlideMenuViewController: UITableViewController {
         {
             segueIdentifier = "showDeveloperCredits"
         }
+        if(indexPath.row == 3)
+        {
+            segueIdentifier = "showTrending"
+        }
+        
 
         self.performSegue(withIdentifier: segueIdentifier, sender: self)
     }
