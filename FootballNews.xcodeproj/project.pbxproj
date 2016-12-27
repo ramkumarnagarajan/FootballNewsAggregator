@@ -158,7 +158,7 @@
 		3189091E1DBD9945004B7184 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		31891A171DFE84A3006838DB /* BlackBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackBackground.png; sourceTree = "<group>"; };
 		319375701E0B842E00F0A44A /* Hashtag Activity Grid-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hashtag Activity Grid-48.png"; sourceTree = "<group>"; };
-		3199E6781DC67D0000B6C6C7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
+		3199E6781DC67D0000B6C6C7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = ../TwitterKit.framework; sourceTree = "<group>"; };
 		3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = ../TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = ../TwitterCore.framework; sourceTree = "<group>"; };
@@ -223,6 +223,7 @@
 		317708811BAE371500435A9A = {
 			isa = PBXGroup;
 			children = (
+				3199E6781DC67D0000B6C6C7 /* Fabric.framework */,
 				3177088C1BAE371500435A9A /* FootballNews */,
 				3177088B1BAE371500435A9A /* Products */,
 				311053F91E0A5D1000FE4E9B /* Frameworks */,
@@ -242,7 +243,6 @@
 			children = (
 				31FF65401DF10E6F00F368E6 /* Charts.xcodeproj */,
 				314C9B791DD99C02007C315E /* Utilities */,
-				3199E6781DC67D0000B6C6C7 /* Fabric.framework */,
 				3199E6791DC67D0000B6C6C7 /* TwitterKit.framework */,
 				3199E67A1DC67D0000B6C6C7 /* TwitterKitResources.bundle */,
 				3199E67B1DC67D0000B6C6C7 /* TwitterCore.framework */,

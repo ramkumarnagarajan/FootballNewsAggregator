@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VoW-hk-4Uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3134" y="-1367"/>
+            <point key="canvasLocation" x="-3291" y="-1102"/>
         </scene>
         <!--Show Trend View Controller-->
         <scene sceneID="Z5k-hW-QFv">
@@ -302,7 +302,7 @@
             </objects>
             <point key="canvasLocation" x="-945" y="-2470"/>
         </scene>
-        <!--Team Updates View Controller-->
+        <!--HOME-->
         <scene sceneID="wdq-w9-e5N">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="960-BB-RbQ" customClass="TeamUpdatesViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -311,7 +311,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Syu-LN-gVZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ak5-4D-2fU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-zr-cCr">
@@ -345,7 +345,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="B5j-Fm-nvX">
+                    <navigationItem key="navigationItem" title="HOME" id="B5j-Fm-nvX">
                         <barButtonItem key="leftBarButtonItem" image="Menu-48.png" id="WyN-JX-9iK">
                             <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
@@ -400,22 +400,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyd-2T-ian">
-                                <rect key="frame" x="1" y="0.0" width="765" height="971"/>
+                                <rect key="frame" x="0.0" y="0.0" width="767" height="926"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aIh-Hv-hzd" id="Hii-Id-HfY"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="F89-Ml-V0B">
+                                <rect key="frame" x="366" y="494" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-bh-G9C">
+                                <rect key="frame" x="-1" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="hDx-C2-QFj">
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack:" destination="aIh-Hv-hzd" id="rNK-sc-Vbz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7a7-d4-aV8"/>
+                                    <barButtonItem systemItem="fastForward" id="Cbc-eP-cmk">
+                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goForward:" destination="aIh-Hv-hzd" id="cn1-mo-0yz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Zyd-2T-ian" firstAttribute="height" secondItem="EQD-D3-gvf" secondAttribute="height" id="GkB-Ae-0ZE"/>
                             <constraint firstItem="Zyd-2T-ian" firstAttribute="top" secondItem="LTf-r8-kbC" secondAttribute="bottom" constant="2" id="Ma5-GU-lJH"/>
                             <constraint firstItem="Zyd-2T-ian" firstAttribute="centerY" secondItem="EQD-D3-gvf" secondAttribute="centerY" id="Scd-Wk-RbN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zyd-2T-ian" secondAttribute="trailing" constant="-6" id="U85-hh-ZmR"/>
-                            <constraint firstItem="Zyd-2T-ian" firstAttribute="leading" secondItem="EQD-D3-gvf" secondAttribute="leadingMargin" constant="-14" id="eN5-Im-shy"/>
-                            <constraint firstItem="89r-Ja-tPf" firstAttribute="top" secondItem="Zyd-2T-ian" secondAttribute="bottom" constant="38" id="wlU-06-HI9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zyd-2T-ian" secondAttribute="trailing" id="U85-hh-ZmR"/>
+                            <constraint firstItem="Zyd-2T-ian" firstAttribute="leading" secondItem="EQD-D3-gvf" secondAttribute="leadingMargin" id="eN5-Im-shy"/>
+                            <constraint firstItem="89r-Ja-tPf" firstAttribute="top" secondItem="Zyd-2T-ian" secondAttribute="bottom" constant="5" id="wlU-06-HI9"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="3Ge-DH-cJ8">
                         <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Pqu-PP-RkS">
                             <connections>
@@ -423,13 +453,17 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="loader" destination="F89-Ml-V0B" id="nZs-x6-jox"/>
                         <outlet property="webView" destination="Zyd-2T-ian" id="PlP-FA-VlI"/>
+                        <outlet property="webViewBackButton" destination="hDx-C2-QFj" id="F0I-4D-0fr"/>
+                        <outlet property="webViewFwdButton" destination="Cbc-eP-cmk" id="ZJI-HS-ZBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPx-73-vGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="-694"/>
+            <point key="canvasLocation" x="508" y="-694"/>
         </scene>
         <!--Filtered Tweets Table View Controller-->
         <scene sceneID="PKB-mZ-KJS">
@@ -494,7 +528,7 @@
                     <navigationItem key="navigationItem" id="bMa-Ij-nra"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2Y-hM-i1T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="t2Y-hM-i1T">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -519,7 +553,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I0R-Dr-FVo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="75a-A9-Wz1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bA-19-Fce">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6bA-19-Fce">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -542,7 +576,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCu-u7-E85" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9rO-ba-RIX"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wb8-hE-A61">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wb8-hE-A61">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -565,7 +599,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pcw-HJ-ds1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Gjh-hA-CvE"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3o5-le-SDb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3o5-le-SDb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -599,7 +633,7 @@
                         <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Ea0-ES-VRm">
                             <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="960-BB-RbQ" kind="push" id="b1P-Js-CC8"/>
+                                <segue destination="960-BB-RbQ" kind="push" id="rLD-oU-imw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -615,7 +649,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sgg-0t-IuP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sgg-0t-IuP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -634,7 +668,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U43-FP-hpU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="XEN-D5-Ds5"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eo3-1E-4RH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eo3-1E-4RH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -662,9 +696,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pCJ-tl-gYe"/>
-        <segue reference="77h-RN-r53"/>
-        <segue reference="Ofw-Iz-1TM"/>
+        <segue reference="Vqf-KU-I4C"/>
+        <segue reference="rLD-oU-imw"/>
+        <segue reference="hwa-ZM-vm7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

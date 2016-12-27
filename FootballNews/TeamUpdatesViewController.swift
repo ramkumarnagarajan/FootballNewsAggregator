@@ -47,6 +47,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
+        searchController.searchBar.placeholder="Filter"
         searchController.searchResultsUpdater=self
         searchController.dimsBackgroundDuringPresentation=false
         definesPresentationContext=true
