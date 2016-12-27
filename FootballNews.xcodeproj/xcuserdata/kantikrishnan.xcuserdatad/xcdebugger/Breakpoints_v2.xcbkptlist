@@ -1080,11 +1080,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1096,11 +1096,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1112,11 +1112,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1128,11 +1128,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1144,11 +1144,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1160,11 +1160,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1208,11 +1208,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/DetailViewController.swift"
-            timestampString = "503986364.160197"
+            timestampString = "504489222.397389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1224,11 +1224,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/DetailViewController.swift"
-            timestampString = "503986364.160197"
+            timestampString = "504489222.397389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1240,7 +1240,87 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
@@ -1256,124 +1336,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/DetailViewController.swift"
-            timestampString = "503986364.160197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/DetailViewController.swift"
-            timestampString = "503986364.160197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1464,11 +1432,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1480,11 +1448,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1496,11 +1464,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1512,11 +1480,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1528,11 +1496,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1544,11 +1512,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1560,11 +1528,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
             <Locations>
@@ -1608,11 +1576,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1624,11 +1592,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1672,11 +1640,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1688,11 +1656,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1704,11 +1672,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1720,11 +1688,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1736,7 +1704,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "202"
@@ -1752,27 +1736,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338421.13913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2072,11 +2040,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502338850.187892"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2104,7 +2072,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502357512.623509"
+            timestampString = "504487101.089233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/TeamUpdatesViewController.swift"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -2120,7 +2104,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502357513.753463"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
@@ -2136,11 +2120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502357514.6695"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2152,27 +2136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502357527.318393"
+            timestampString = "504487101.089233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FootballNews/TeamUpdatesViewController.swift"
-            timestampString = "502357528.894045"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2477,6 +2445,84 @@
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "getTrendsForPlace(place:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/DetailViewController.swift"
+            timestampString = "504486719.489755"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "resizeWebContent()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/DetailViewController.swift"
+            timestampString = "504487296.906734"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/DetailViewController.swift"
+            timestampString = "504490179.65294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/DetailViewController.swift"
+            timestampString = "504490179.65294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FootballNews/DetailViewController.swift"
+            timestampString = "504490673.346486"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

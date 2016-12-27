@@ -25,19 +25,23 @@ class DetailViewController: UIViewController {
 
     var strTeamName=""
     var strTeamURL=""
-    
-  
-    
-    @IBOutlet weak var webViewOutlet: UIWebView!
+
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Detail View Controller loaded")
         print(strTeamName)
         print(strTeamURL)
+        webView.scalesPageToFit = true
         self.title = strTeamName.appending(" - UPDATES")
-        webViewOutlet.loadRequest(NSURLRequest(url: NSURL(string: strTeamURL)! as URL) as URLRequest)
-        webViewOutlet.resizeWebContent()
-
+        let url = NSURL (string: strTeamURL)
+        let requestObj = NSURLRequest(url: url! as URL);
+    webView.loadRequest(requestObj as URLRequest);
+        webView.scalesPageToFit = true
+        
+        webView.resizeWebContent()
+        self.webView.contentMode = UIViewContentMode.scaleAspectFit
+        
         // Do any additional setup after loading the view.
     }
 

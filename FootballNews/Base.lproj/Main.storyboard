@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -301,7 +302,7 @@
             </objects>
             <point key="canvasLocation" x="-945" y="-2470"/>
         </scene>
-        <!--UPDATES HOME-->
+        <!--Team Updates View Controller-->
         <scene sceneID="wdq-w9-e5N">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="960-BB-RbQ" customClass="TeamUpdatesViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -309,13 +310,16 @@
                         <viewControllerLayoutGuide type="top" id="fBd-re-QdV"/>
                         <viewControllerLayoutGuide type="bottom" id="Syu-LN-gVZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ak5-4D-2fU">
+                    <view key="view" contentMode="scaleToFill" id="ak5-4D-2fU">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-zr-cCr">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tx2-zr-cCr" secondAttribute="height" multiplier="4:5" id="YOE-aI-Ij9"/>
+                                </constraints>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellMain" rowHeight="49" id="sgk-Pr-QGu">
@@ -325,9 +329,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="702" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="F98-g4-22O" kind="push" identifier="showTwitterDetail" id="oKX-CX-fgQ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -344,7 +345,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="UPDATES HOME" id="B5j-Fm-nvX">
+                    <navigationItem key="navigationItem" id="B5j-Fm-nvX">
                         <barButtonItem key="leftBarButtonItem" image="Menu-48.png" id="WyN-JX-9iK">
                             <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
@@ -352,6 +353,8 @@
                     <connections>
                         <outlet property="menuButton" destination="WyN-JX-9iK" id="E2D-8b-JNj"/>
                         <outlet property="tableView" destination="Tx2-zr-cCr" id="7hw-TE-4CG"/>
+                        <segue destination="aIh-Hv-hzd" kind="push" identifier="showDetail" id="i0E-1E-l57"/>
+                        <segue destination="F98-g4-22O" kind="push" identifier="showTwitterDetail" id="z51-BT-UnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHk-XI-zJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -384,7 +387,7 @@
             </objects>
             <point key="canvasLocation" x="1121" y="486"/>
         </scene>
-        <!--Updates For ....-->
+        <!--Detail View Controller-->
         <scene sceneID="OXg-1F-oXp">
             <objects>
                 <viewController storyboardIdentifier="DetailVC" id="aIh-Hv-hzd" customClass="DetailViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -394,30 +397,39 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EQD-D3-gvf">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleAspectFit" fixedFrame="YES" scalesPageToFit="YES" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5R-kA-pci">
-                                <rect key="frame" x="0.0" y="70" width="768" height="954"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <webView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyd-2T-ian">
+                                <rect key="frame" x="1" y="0.0" width="765" height="971"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zyd-2T-ian" firstAttribute="height" secondItem="EQD-D3-gvf" secondAttribute="height" id="GkB-Ae-0ZE"/>
+                            <constraint firstItem="Zyd-2T-ian" firstAttribute="top" secondItem="LTf-r8-kbC" secondAttribute="bottom" constant="2" id="Ma5-GU-lJH"/>
+                            <constraint firstItem="Zyd-2T-ian" firstAttribute="centerY" secondItem="EQD-D3-gvf" secondAttribute="centerY" id="Scd-Wk-RbN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zyd-2T-ian" secondAttribute="trailing" constant="-6" id="U85-hh-ZmR"/>
+                            <constraint firstItem="Zyd-2T-ian" firstAttribute="leading" secondItem="EQD-D3-gvf" secondAttribute="leadingMargin" constant="-14" id="eN5-Im-shy"/>
+                            <constraint firstItem="89r-Ja-tPf" firstAttribute="top" secondItem="Zyd-2T-ian" secondAttribute="bottom" constant="38" id="wlU-06-HI9"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Updates For ...." id="3Ge-DH-cJ8">
+                    <navigationItem key="navigationItem" id="3Ge-DH-cJ8">
                         <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Pqu-PP-RkS">
                             <connections>
-                                <segue destination="960-BB-RbQ" kind="push" id="4Od-ru-0uY"/>
+                                <segue destination="960-BB-RbQ" kind="push" id="77h-RN-r53"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="webViewOutlet" destination="R5R-kA-pci" id="o7r-i3-2Kn"/>
+                        <outlet property="webView" destination="Zyd-2T-ian" id="PlP-FA-VlI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPx-73-vGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="-719"/>
+            <point key="canvasLocation" x="960" y="-694"/>
         </scene>
         <!--Filtered Tweets Table View Controller-->
         <scene sceneID="PKB-mZ-KJS">
@@ -471,7 +483,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLi-E2-4JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2612" y="510"/>
+            <point key="canvasLocation" x="-1222" y="486"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XnC-I4-iTT">
@@ -482,7 +494,7 @@
                     <navigationItem key="navigationItem" id="bMa-Ij-nra"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="t2Y-hM-i1T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t2Y-hM-i1T">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -507,7 +519,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I0R-Dr-FVo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="75a-A9-Wz1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6bA-19-Fce">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bA-19-Fce">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -530,7 +542,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCu-u7-E85" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9rO-ba-RIX"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wb8-hE-A61">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wb8-hE-A61">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -553,7 +565,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pcw-HJ-ds1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Gjh-hA-CvE"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3o5-le-SDb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3o5-le-SDb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -597,32 +609,13 @@
             <point key="canvasLocation" x="-2656" y="1695"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5kM-4f-EZw">
-            <objects>
-                <navigationController storyboardIdentifier="NCForFilteredTweetsVC" automaticallyAdjustsScrollViewInsets="NO" id="gSl-ya-cgc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="x1z-8b-GYL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7am-yg-0HY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="F98-g4-22O" kind="relationship" relationship="rootViewController" id="bl4-sm-JSA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mX8-ER-mSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3654" y="510"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="0eM-2I-cHh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceR-r6-SN2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sgg-0t-IuP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sgg-0t-IuP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -641,7 +634,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U43-FP-hpU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="XEN-D5-Ds5"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eo3-1E-4RH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eo3-1E-4RH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -670,9 +663,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="pCJ-tl-gYe"/>
-        <segue reference="b1P-Js-CC8"/>
+        <segue reference="77h-RN-r53"/>
         <segue reference="Ofw-Iz-1TM"/>
-        <segue reference="oKX-CX-fgQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

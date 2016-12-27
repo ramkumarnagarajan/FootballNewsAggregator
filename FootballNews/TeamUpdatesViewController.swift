@@ -68,7 +68,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.view.backgroundColor = bodyBackgroundColor
-        //self.tableView.backgroundColor=bodyBackgroundColor
         let imageView = UIImageView(image: tableBackgroundImage)
         imageView.contentMode = .scaleAspectFill
         self.tableView.backgroundView = imageView
