@@ -98,7 +98,7 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     
     func configureSinceDateTextField(_ textField: UITextField!)
     {
-        textField.placeholder="YYYY-MM-DD"
+        textField.placeholder="Filter For Updates Since [YYYY-MM-DD]"
         self.txtSinceDate = textField
     }
     
@@ -119,13 +119,11 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         {
             updatedQuery.insert(" " , at: updatedQuery.length)
             updatedQuery.append(strMood!)
-            //updatedQuery.append(" ")
         }
         if(!strContains!.isEmpty)
         {
             updatedQuery.insert(" " , at: updatedQuery.length)
             updatedQuery.append(strContains!)
-            //updatedQuery.append(" ")
         }
         if(!strSinceDate!.isEmpty)
         {

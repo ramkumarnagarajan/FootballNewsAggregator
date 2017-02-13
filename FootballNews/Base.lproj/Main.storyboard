@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="-3291" y="-1102"/>
         </scene>
-        <!--Show Trend View Controller-->
+        <!--Trends-->
         <scene sceneID="Z5k-hW-QFv">
             <objects>
                 <tableViewController id="Cph-za-5Fn" customClass="ShowTrendViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +154,14 @@
                             <outlet property="delegate" destination="Cph-za-5Fn" id="TTw-vV-42v"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="79C-c4-yco"/>
+                    <navigationItem key="navigationItem" title="Trends" id="79C-c4-yco">
+                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Q1O-ZG-S3Q">
+                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="960-BB-RbQ" kind="push" id="sDI-Gb-Wrc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHk-0X-ci7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -503,11 +510,7 @@
                                     <action selector="showFilterOptions:" destination="F98-g4-22O" id="w9w-l4-k9y"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="Line Chart Filled-30.png" id="3mQ-K9-Y0i">
-                                <connections>
-                                    <segue destination="nR5-6G-tcu" kind="push" id="Ofw-Iz-1TM"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem image="Line Chart Filled-30.png" id="3mQ-K9-Y0i"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -697,8 +700,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Vqf-KU-I4C"/>
-        <segue reference="rLD-oU-imw"/>
-        <segue reference="hwa-ZM-vm7"/>
+        <segue reference="jRy-V9-qBg"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

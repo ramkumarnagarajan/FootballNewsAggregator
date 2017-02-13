@@ -53,7 +53,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         definesPresentationContext=true
         tableView.tableHeaderView=searchController.searchBar
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellMain")
-        //self.tableView.backgroundColor=UIColor.black
         self.navigationController?.navigationBar.barTintColor = titleBackGroundColor
         self.navigationController?.navigationBar.isOpaque = true
         if revealViewController() != nil
@@ -88,7 +87,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         // Get all the Entity Objects Stored and return the number
-        //tableView.reloadData()
         let matchingEntities = Team().getStoredObjects("")
         if(matchingEntities.isEmpty)
         {
