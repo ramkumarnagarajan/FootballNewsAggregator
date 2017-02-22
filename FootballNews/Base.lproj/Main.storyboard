@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="MW6-iN-sBX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="MW6-iN-sBX">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OhC-Dj-3Sr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendsCellIdentifier" id="OhC-Dj-3Sr">
                                 <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhC-Dj-3Sr" id="RgD-60-Jfg">
@@ -150,8 +150,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Cph-za-5Fn" id="hhX-ul-LNR"/>
-                            <outlet property="delegate" destination="Cph-za-5Fn" id="TTw-vV-42v"/>
+                            <outlet property="dataSource" destination="Cph-za-5Fn" id="sEc-iq-Sg1"/>
+                            <outlet property="delegate" destination="Cph-za-5Fn" id="rAa-X6-myS"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Trends" id="79C-c4-yco">
@@ -165,7 +165,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHk-0X-ci7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1750" y="-2470"/>
+            <point key="canvasLocation" x="-3964" y="-2470"/>
         </scene>
         <!--Slide Menu View Controller-->
         <scene sceneID="dN7-hM-sBp">
@@ -619,52 +619,6 @@
             </objects>
             <point key="canvasLocation" x="141" y="486"/>
         </scene>
-        <!--Show Trend View Controller-->
-        <scene sceneID="rp2-wo-xYG">
-            <objects>
-                <viewController storyboardIdentifier="ShowTrendViewController" id="nR5-6G-tcu" customClass="ShowTrendViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Es-j6-mwq"/>
-                        <viewControllerLayoutGuide type="bottom" id="03T-yK-uYr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jKJ-OO-rsl">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="901-Ah-sag">
-                        <barButtonItem key="leftBarButtonItem" image="Previous-48.png" id="Ea0-ES-VRm">
-                            <color key="tintColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="960-BB-RbQ" kind="push" id="rLD-oU-imw"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cun-xU-cQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2656" y="1695"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0eM-2I-cHh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceR-r6-SN2" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sgg-0t-IuP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nR5-6G-tcu" kind="relationship" relationship="rootViewController" id="hwa-ZM-vm7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6H5-tN-7wT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3654" y="1666"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="91F-VH-UeO">
             <objects>
@@ -674,6 +628,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eo3-1E-4RH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="23"/>
+                            <color key="textColor" red="0.44705882349999998" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -699,8 +658,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Vqf-KU-I4C"/>
-        <segue reference="jRy-V9-qBg"/>
+        <segue reference="pCJ-tl-gYe"/>
+        <segue reference="sDI-Gb-Wrc"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
