@@ -19,8 +19,6 @@ class ShowTrendViewController : UITableViewController{
     var trendingTopics:Array<Any> = ["345","345"]
     
     //Twitter API End Points :
-    let statusesShowEndpoint = "https://api.twitter.com/1.1/statuses/show.json?"
-    let tweetsShowEndPoint = "https://api.twitter.com/1.1/search/tweets.json?"
     let showTrendsEndPoint = "https://api.twitter.com/1.1/trends/place.json?id=1"
     
     override func viewDidLoad() {
@@ -38,10 +36,9 @@ class ShowTrendViewController : UITableViewController{
     {
         
         let client = TWTRAPIClient()
-        let params = ["exclude":"hashtags"]
+        let params = ["exclude":"hashtags","id":"1"]
         var clientError : NSError?
         let tweetsRequest = client.urlRequest(withMethod: "GET", url: showTrendsEndPoint, parameters: params, error: &clientError)
-        //var arrayList as NSArray<String> = ["","3435"]
         client.sendTwitterRequest(tweetsRequest) { (response, data, connectionError) -> Void in
                 if connectionError != nil {
                     print("Error: \(connectionError)")
@@ -50,24 +47,22 @@ class ShowTrendViewController : UITableViewController{
             do {
                 let result  = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [NSDictionary]
                 let dataArray = result.first?["trends"] as! NSArray
-                print("Data items count: \(dataArray.count)")
                 var iCounter:Int = 0
-                for item in dataArray {
+                for item in dataArray
+                {
                     // loop through data items
                     let Obj = item as! NSDictionary
                     //print(Obj["name"]!)
                     self.trendingTopics.insert("\(Obj["name"])",at:iCounter)
-                    iCounter = iCounter+1 //Obj["name"]
+                    iCounter = iCounter+1
                 }
-                print("$$$$$$$$$$$$$ \(self.trendingTopics[3])")
+                
             } catch let jsonError as NSError {
                     print("json error: \(jsonError.localizedDescription)")
                 }
         }
-
-        //call the showTrends End points with this woeid.
-        //assign the json as datasource.
     }
+
     
 //    func getRestAPIData(twitterHandle:String,restAPIEndPoint:String)
 //        {
