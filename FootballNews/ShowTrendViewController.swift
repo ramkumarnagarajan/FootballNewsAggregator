@@ -12,7 +12,6 @@ import TwitterKit
 import CoreLocation
 import AddressBookUI
 
-
 class ShowTrendViewController : UITableViewController{
     var strSourceName:String = ""
     var locations: [String]!
@@ -26,15 +25,49 @@ class ShowTrendViewController : UITableViewController{
     let tableBackgroundImage = UIImage(named: "BlackBackground.png")
     
     //Twitter API End Points :
-    let showTrendsEndPoint = "https://api.twitter.com/1.1/trends/place.json?id=1"
+    let showTrendsEndPoint = "https://api.twitter.com/1.1/trends/place.json?"
+    let getWoeidEndPoint = "https://api.twitter.com/1.1/trends/closest.json?"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Trending World Topics"
+        self.title = "TRENDING"
         self.navigationController?.navigationBar.tintColor = titleTextColor
-        getTrendsForPlace(place: "Chennai")
+        var currentLat:Double = 13.0827
+        var currentLong:Double = 80.2703
+        var woeid:Int64 = 1
+        
+        woeid = getCurrentLatAndLongAndWoeid(currentLat: currentLat,currentLong: currentLong)
     }
     
+    
+    func getCurrentLatAndLongAndWoeid(currentLat:Double,currentLong:Double) -> Int64 {
+
+        let client = TWTRAPIClient()
+        let params = ["lat":"\(currentLat)","long":"\(currentLong)"]
+        var clientError : NSError?
+        let tweetsRequest = client.urlRequest(withMethod: "GET", url: self.getWoeidEndPoint, parameters: params, error: &clientError)
+        var currWoeid:Int64 = 1 // One for the World level
+        client.sendTwitterRequest(tweetsRequest) { (response, data, connectionError) -> Void in
+            if connectionError != nil {
+                print("Error: \(connectionError)")
+                return
+            }
+            
+            do
+            {
+                let result  = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [NSDictionary]
+                currWoeid = result.first?["woeid"] as! Int64
+                print(currWoeid)
+                self.getTrendsNearThePlace(woeid: currWoeid)
+            }
+                
+            catch let jsonError as NSError {
+                print("json error: \(jsonError.localizedDescription)")
+                currWoeid = 1
+            }
+        }
+        return currWoeid
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -92,13 +125,14 @@ class ShowTrendViewController : UITableViewController{
         // Dispose of any resources that can be recreated.
     }
 
-    func getTrendsForPlace(place:String)
+    func getTrendsNearThePlace(woeid: Int64)
     {
         
         let client = TWTRAPIClient()
-        let params = ["exclude":"hashtags","id":"1"]
+        let params = ["exclude":"hashtags","id":"\(woeid)"]
+        print("Printing WOEID from getTrendsNearThePlace method : \(woeid)")
         var clientError : NSError?
-        let tweetsRequest = client.urlRequest(withMethod: "GET", url: showTrendsEndPoint, parameters: params, error: &clientError)
+        let tweetsRequest = client.urlRequest(withMethod: "GET", url: self.showTrendsEndPoint, parameters: params, error: &clientError)
         client.sendTwitterRequest(tweetsRequest) { (response, data, connectionError) -> Void in
                 if connectionError != nil {
                     print("Error: \(connectionError)")
@@ -124,7 +158,16 @@ class ShowTrendViewController : UITableViewController{
         }
     }
 
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let segueIdentifier = "showDetail"
+        var strSelectedHashTag = ""
+        strSelectedHashTag = (trendingTopics[(indexPath as NSIndexPath).item] as AnyObject).capitalized
+        print(strSelectedHashTag)
+        // Start segue with index of cell clicked
+        //self.performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
+
 //    func getRestAPIData(twitterHandle:String,restAPIEndPoint:String)
 //        {
 //            let client = TWTRAPIClient()

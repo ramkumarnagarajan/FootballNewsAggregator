@@ -28,6 +28,8 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     
     @IBOutlet weak var btnShowTrends: UIBarButtonItem!
     
+    @IBOutlet weak var btnShowFilters: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Filters For \(strTwitterSource)"
@@ -57,6 +59,7 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         if(self.strTwitterSource.hasPrefix("@"))
         {
             btnShowTrends.isEnabled = false
+            btnShowFilters.isEnabled = false
         }
     }
     

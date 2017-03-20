@@ -317,8 +317,8 @@
                         <viewControllerLayoutGuide type="top" id="fBd-re-QdV"/>
                         <viewControllerLayoutGuide type="bottom" id="Syu-LN-gVZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ak5-4D-2fU">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="ak5-4D-2fU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-zr-cCr">
@@ -392,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSm-FD-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="486"/>
+            <point key="canvasLocation" x="-945" y="-3705"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="OXg-1F-oXp">
@@ -406,15 +406,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyd-2T-ian">
-                                <rect key="frame" x="0.0" y="0.0" width="767" height="926"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                                <connections>
-                                    <outlet property="delegate" destination="aIh-Hv-hzd" id="Hii-Id-HfY"/>
-                                </connections>
-                            </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="F89-Ml-V0B">
                                 <rect key="frame" x="366" y="494" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -441,6 +432,15 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <webView clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyd-2T-ian">
+                                <rect key="frame" x="0.0" y="20" width="767" height="926"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aIh-Hv-hzd" id="Hii-Id-HfY"/>
+                                </connections>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -470,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPx-73-vGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508" y="-694"/>
+            <point key="canvasLocation" x="907" y="-694"/>
         </scene>
         <!--Filtered Tweets Table View Controller-->
         <scene sceneID="PKB-mZ-KJS">
@@ -515,6 +515,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnShowFilters" destination="1PU-gd-sUX" id="hCo-ct-5Jw"/>
                         <outlet property="btnShowTrends" destination="3mQ-K9-Y0i" id="J9l-G4-4xH"/>
                     </connections>
                 </tableViewController>
@@ -617,7 +618,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Z5-FW-pTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="486"/>
+            <point key="canvasLocation" x="-2806" y="-3705"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="91F-VH-UeO">
@@ -658,7 +659,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pCJ-tl-gYe"/>
-        <segue reference="sDI-Gb-Wrc"/>
+        <segue reference="Vqf-KU-I4C"/>
+        <segue reference="77h-RN-r53"/>
     </inferredMetricsTieBreakers>
 </document>
