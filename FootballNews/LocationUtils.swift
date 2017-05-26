@@ -23,7 +23,7 @@ class LocationUtils{
                 let location = placemark?.location
                 let coordinate = location?.coordinate
                 print("\nlat: \(coordinate!.latitude), long: \(coordinate!.longitude)")
-                strCoordinates = "\(coordinate?.latitude),\(coordinate?.longitude)"
+                strCoordinates = "\(String(describing: coordinate?.latitude)),\(String(describing: coordinate?.longitude))"
             }
         })
         return strCoordinates

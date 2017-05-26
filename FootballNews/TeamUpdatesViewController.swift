@@ -58,7 +58,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         if revealViewController() != nil
         {
             menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             //self.revealViewController().rearViewRevealWidth = 400
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
@@ -196,7 +196,7 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         {
             if (identifier.contains("showDetail"))
             {
-                let detailVC = segue.destination as! DetailViewController
+                let detailVC = segue.destination as! WebViewController
                 detailVC.strTeamURL = strSourceURL
                 detailVC.strTeamName = strTeamName
                 

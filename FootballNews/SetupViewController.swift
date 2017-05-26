@@ -48,9 +48,9 @@ class SetupViewController : UIViewController
     {
         Twitter.sharedInstance().logIn { session, error in
             if (session != nil) {
-                print("signed in as \(session?.userName)");
+                print("signed in as \(String(describing: session?.userName))");
             } else {
-                print("error: \(error?.localizedDescription)");
+                print("error: \(String(describing: error?.localizedDescription))");
             }
         }
     }

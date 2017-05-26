@@ -16,6 +16,7 @@ class ShowTrendViewController : UITableViewController{
     var strSourceName:String = ""
     var locations: [String]!
     var trendingTopics:Array<Any> = [""]
+    var strTwitterSource:String = ""
     
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
@@ -32,11 +33,11 @@ class ShowTrendViewController : UITableViewController{
         super.viewDidLoad()
         self.title = "TRENDING"
         self.navigationController?.navigationBar.tintColor = titleTextColor
-        var currentLat:Double = 13.0827
-        var currentLong:Double = 80.2703
-        var woeid:Int64 = 1
+        let currentLat:Double = 13.0827
+        let currentLong:Double = 80.2703
+        var _:Int64 = 1
         
-        woeid = getCurrentLatAndLongAndWoeid(currentLat: currentLat,currentLong: currentLong)
+        getCurrentLatAndLongAndWoeid(currentLat: currentLat,currentLong: currentLong)
     }
     
     
@@ -49,7 +50,7 @@ class ShowTrendViewController : UITableViewController{
         var currWoeid:Int64 = 1 // One for the World level
         client.sendTwitterRequest(tweetsRequest) { (response, data, connectionError) -> Void in
             if connectionError != nil {
-                print("Error: \(connectionError)")
+                print("Error: \(String(describing: connectionError))")
                 return
             }
             
@@ -135,7 +136,7 @@ class ShowTrendViewController : UITableViewController{
         let tweetsRequest = client.urlRequest(withMethod: "GET", url: self.showTrendsEndPoint, parameters: params, error: &clientError)
         client.sendTwitterRequest(tweetsRequest) { (response, data, connectionError) -> Void in
                 if connectionError != nil {
-                    print("Error: \(connectionError)")
+                    print("Error: \(String(describing: connectionError))")
                 }
 
             do {
@@ -160,14 +161,32 @@ class ShowTrendViewController : UITableViewController{
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let segueIdentifier = "showDetail"
+        let segueIdentifier = "showTwitterDetail"
         var strSelectedHashTag = ""
         strSelectedHashTag = (trendingTopics[(indexPath as NSIndexPath).item] as AnyObject).capitalized
         print(strSelectedHashTag)
+        self.strTwitterSource=strSelectedHashTag
         // Start segue with index of cell clicked
-        //self.performSegue(withIdentifier: segueIdentifier, sender: self)
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier
+        {
+            
+            if(identifier.contains("showTwitterDetail"))
+            {
+                let detailVC = segue.destination as! FilteredTweetsTableViewController
+                detailVC.strTwitterSource = strTwitterSource
+                detailVC.strSourceName = "ShowTrendViewController"
+                
+                print("Prepare for segue called")
+                
+            }
+        }
+    }
+    
+    
 //    func getRestAPIData(twitterHandle:String,restAPIEndPoint:String)
 //        {
 //            let client = TWTRAPIClient()
