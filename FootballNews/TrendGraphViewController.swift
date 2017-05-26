@@ -8,3 +8,10 @@
 
 import Foundation
 import UIKit
+
+class TrendGraphViewController:UIViewController
+{
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

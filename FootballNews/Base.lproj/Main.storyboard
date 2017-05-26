@@ -143,7 +143,7 @@
                                 <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhC-Dj-3Sr" id="RgD-60-Jfg">
-                                    <rect key="frame" x="0.0" y="0.0" width="702" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="702" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -186,7 +186,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SEW-7o-fie" id="scG-7J-3SB">
-                                            <rect key="frame" x="0.0" y="0.0" width="702" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="702" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Teams And  Sources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIA-1x-8AJ">
@@ -215,7 +215,7 @@
                                         <rect key="frame" x="0.0" y="89" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gt8-go-OQl" id="2OP-NU-uEf">
-                                            <rect key="frame" x="0.0" y="0.0" width="702" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="702" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage User Logins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFo-eC-2dE">
@@ -243,7 +243,7 @@
                                         <rect key="frame" x="0.0" y="133" width="768" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnf-ug-niK" id="FqQ-R6-69U">
-                                            <rect key="frame" x="0.0" y="0.0" width="702" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="702" height="56.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="817-Qv-gEO">
@@ -271,7 +271,7 @@
                                         <rect key="frame" x="0.0" y="190" width="768" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTj-SR-Z1Q" id="tYh-fb-GVr">
-                                            <rect key="frame" x="0.0" y="0.0" width="702" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="702" height="56.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-mw-GA4">
@@ -320,7 +320,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Syu-LN-gVZ"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleAspectFit" id="ak5-4D-2fU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-zr-cCr">
@@ -332,7 +332,7 @@
                                         <rect key="frame" x="0.0" y="28" width="768" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgk-Pr-QGu" id="ONT-VO-KL9">
-                                            <rect key="frame" x="0.0" y="0.0" width="702" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="702" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -455,6 +455,25 @@
             </objects>
             <point key="canvasLocation" x="241" y="-694"/>
         </scene>
+        <!--Trend Graph View Controller-->
+        <scene sceneID="8Rf-O6-X5C">
+            <objects>
+                <viewController id="yck-xv-q3a" customClass="TrendGraphViewController" customModule="FootballNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ln6-EL-IpH"/>
+                        <viewControllerLayoutGuide type="bottom" id="NdW-rq-Blc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vK5-Z5-yQE">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3WU-Qh-jtE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZy-aX-67s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2987" y="377"/>
+        </scene>
         <!--Filtered Tweets Table View Controller-->
         <scene sceneID="PKB-mZ-KJS">
             <objects>
@@ -468,7 +487,7 @@
                                 <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1av-fk-MNA" id="Kj2-ZS-ZaG">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -496,6 +515,7 @@
                             <barButtonItem image="Line Chart Filled-30.png" id="3mQ-K9-Y0i">
                                 <connections>
                                     <action selector="showTrendGraphsViewController:" destination="F98-g4-22O" id="jQf-Ws-sCl"/>
+                                    <segue destination="yck-xv-q3a" kind="push" id="qfy-H3-p2m"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -646,7 +666,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Vqf-KU-I4C"/>
-        <segue reference="0He-Fl-RXn"/>
-        <segue reference="z51-BT-UnK"/>
+        <segue reference="fm6-2V-wgt"/>
+        <segue reference="sDI-Gb-Wrc"/>
     </inferredMetricsTieBreakers>
 </document>
