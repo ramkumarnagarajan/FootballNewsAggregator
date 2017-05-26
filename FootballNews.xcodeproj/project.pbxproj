@@ -17,7 +17,6 @@
 		311053FB1E0A5D1000FE4E9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311053FA1E0A5D1000FE4E9B /* CoreLocation.framework */; };
 		311053FF1E0A5D4E00FE4E9B /* LocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311053FE1E0A5D4E00FE4E9B /* LocationUtils.swift */; };
 		311F33111DC1585A003395AB /* LiverpoolAllBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33101DC1585A003395AB /* LiverpoolAllBlack.png */; };
-		311F33131DC15E53003395AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F33121DC15E53003395AB /* DetailViewController.swift */; };
 		311F33151DC1B3DE003395AB /* Social-Login-Buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */; };
 		3121BF3D1DC831D900429727 /* Twitter-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3121BF3C1DC831D900429727 /* Twitter-50.png */; };
 		3121BF3F1DC8334F00429727 /* Twitter Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3121BF3E1DC8334F00429727 /* Twitter Filled-50.png */; };
@@ -128,7 +127,6 @@
 		311053FA1E0A5D1000FE4E9B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		311053FE1E0A5D4E00FE4E9B /* LocationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtils.swift; sourceTree = "<group>"; };
 		311F33101DC1585A003395AB /* LiverpoolAllBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiverpoolAllBlack.png; sourceTree = "<group>"; };
-		311F33121DC15E53003395AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		311F33141DC1B3DE003395AB /* Social-Login-Buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Social-Login-Buttons.png"; sourceTree = "<group>"; };
 		3121BF3C1DC831D900429727 /* Twitter-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-50.png"; sourceTree = "<group>"; };
 		3121BF3E1DC8334F00429727 /* Twitter Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter Filled-50.png"; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 				3125F6511DBEEE2E00690C8D /* SlideMenuViewController.swift */,
 				314150D21DBF2F360003E5AA /* TeamUpdatesViewController.swift */,
 				31AE43F61DBF3CE4005F29A9 /* CreditsViewController.swift */,
-				311F33121DC15E53003395AB /* DetailViewController.swift */,
 				31605FF61DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift */,
 				31605FFC1DDC476A00C8234F /* ShowTrendViewController.swift */,
 				3103473A1ED7CC130066737E /* TrendGraphViewController.swift */,
@@ -532,7 +529,6 @@
 			files = (
 				31605FF71DDC3FDE00C8234F /* FilteredTweetsTableViewController.swift in Sources */,
 				314C9B7B1DD99C29007C315E /* TweetLocation.swift in Sources */,
-				311F33131DC15E53003395AB /* DetailViewController.swift in Sources */,
 				3189091F1DBD9945004B7184 /* SWRevealViewController.m in Sources */,
 				3103473D1ED7E07E0066737E /* WebViewController.swift in Sources */,
 				3125F6521DBEEE2E00690C8D /* SlideMenuViewController.swift in Sources */,
