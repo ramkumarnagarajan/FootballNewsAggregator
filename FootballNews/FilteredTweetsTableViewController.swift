@@ -19,9 +19,12 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     var txtSinceDate : UITextField = UITextField()
     var txtLocation : UITextField = UITextField()
     
-    @IBAction func showTrendGraphsViewController(_ sender: Any) {
-        print("showing trends")
+    @IBAction func showTrendGraphs(_ sender: UIBarButtonItem) {
+        
+        print("About to show Graphs")
+        
     }
+    
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
@@ -36,7 +39,7 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "\(strTwitterSource)"
-        print(self.title)
+        print(self.title!)
         setDataSource(strTwitterQuery: self.strTwitterSource)
     }
 
@@ -53,6 +56,7 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
         {
             let ds = TWTRSearchTimelineDataSource(searchQuery: strTwitterQuery, apiClient: client)
             self.dataSource = ds
+            
         }
         self.tableView.reloadData()
     }

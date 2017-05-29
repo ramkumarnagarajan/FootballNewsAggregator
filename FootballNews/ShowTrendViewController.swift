@@ -85,7 +85,7 @@ class ShowTrendViewController : UITableViewController{
         }
         else
         {
-            return self.trendingTopics.count
+            return (self.trendingTopics.count - 1)
         }
     }
     
@@ -100,6 +100,11 @@ class ShowTrendViewController : UITableViewController{
             if(!strTopicName.isEmpty)
             {
                 cell.textLabel?.text = strTopicName
+            }
+
+            if((self.trendingTopics[(indexPath as NSIndexPath).item] as! String).isEmpty)
+            {
+                cell.textLabel?.text = "."
             }
         }
         else if(self.trendingTopics.count<2){
@@ -148,8 +153,11 @@ class ShowTrendViewController : UITableViewController{
                     // loop through data items
                     let Obj = item as! NSDictionary
                     //print(Obj["name"]!)
+                    if(!(Obj["name"] as! String).isEmpty)
+                    {
                     self.trendingTopics.insert(Obj["name"] as Any,at:iCounter)
                     iCounter = iCounter+1
+                    }
                 }
                 self.tableView.reloadData()
                 self.tableView.tableFooterView = UIView(frame:.zero)
