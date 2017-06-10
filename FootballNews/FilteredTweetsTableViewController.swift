@@ -22,7 +22,8 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     @IBAction func showTrendGraphs(_ sender: UIBarButtonItem) {
         
         print("About to show Graphs")
-        
+        let tgVC = TrendGraphViewController()
+        self.present(tgVC, animated: true, completion: nil)
     }
     
     //backgroundColorVariables

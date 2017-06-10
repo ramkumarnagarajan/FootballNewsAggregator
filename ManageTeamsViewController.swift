@@ -21,7 +21,6 @@ class ManageTeamsViewController: UITableViewController {
     
     //Class Variables
     var txtTeamName:UITextField = UITextField()
-    var txtSourceName:UITextField = UITextField()
     var txtSourceURL : UITextField = UITextField()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,7 +59,6 @@ class ManageTeamsViewController: UITableViewController {
         let alert = UIAlertController(title: "Team Information", message: nil, preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addTextField(configurationHandler: configureTeamNameTextField)
-        alert.addTextField(configurationHandler: configureSourceNameTextField)
         alert.addTextField(configurationHandler: configureSourceURLTextField)
         
         alert.addAction(alertSaveButton)
@@ -73,12 +71,6 @@ class ManageTeamsViewController: UITableViewController {
     {
         textField.placeholder="Enter Source URL/Twitter ScreenName"
         self.txtSourceURL = textField
-    }
-    
-    func configureSourceNameTextField(_ textField: UITextField!)
-    {
-        textField.placeholder="Enter Source Name"
-        self.txtSourceName = textField
     }
     
     
@@ -94,15 +86,11 @@ class ManageTeamsViewController: UITableViewController {
         let teamName = self.txtTeamName.text
         print("Entered Team is " + teamName!)
         
-        let sourceName = self.txtSourceName.text
-        print("Entered source-name is " + sourceName!)
-        
-        
         let sourceURL = self.txtSourceURL.text
         print("Entered source URL is " + sourceURL!)
         
         //Save the content as coreData -> Easy For retrieval
-        let blnDataSaved = Team().saveData(teamName!, sourceName: sourceName!, sourceURL: sourceURL!)
+        let blnDataSaved = Team().saveData(teamName!, sourceURL: sourceURL!)
         //Show an alert with success / failureMessage
         var alert = UIAlertController()
         var alertSaveButton = UIAlertAction()
@@ -170,13 +158,11 @@ class ManageTeamsViewController: UITableViewController {
         cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
         cell.textLabel?.textColor = tableCellTextColor
         // Configure the cell...
-        cell.textLabel?.text="No Teams Found..Please add few.."
+        cell.textLabel?.text="No tabs Found..Please add a few.."
         if(!teams.isEmpty && teams.count>0)
         {
             let strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
-            let strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
-            
-            cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
+            cell.textLabel?.text = strTeamName
         }
         cell.backgroundColor = UIColor.clear
         return cell

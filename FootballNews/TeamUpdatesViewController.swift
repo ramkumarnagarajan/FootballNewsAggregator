@@ -107,10 +107,9 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         let teams : [Team] = Team().getStoredObjects("")
         let cell = UITableViewCell()
         var strTeamName = ""
-        var strSrcName = ""
         
         // Configure the cell...
-        cell.textLabel?.text="No Teams Found..Please add few.."
+        cell.textLabel?.text="No tabs Found..Please add a few.."
         cell.textLabel?.font = UIFont(name:"Cousine-Regular", size:16)
         
         var t: Team
@@ -119,7 +118,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             {
                 t = filteredTeams[indexPath.row]
                 strTeamName = t.teamName.capitalized
-                strSrcName = t.sourceName.capitalized
                 
                 //Some indication that this result is filtered..
                 cell.layer.borderWidth = 2.0
@@ -131,11 +129,10 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             if(!teams.isEmpty && teams.count>0)
             {
                 strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
-                strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
             }
             
         }
-        cell.textLabel?.text = strTeamName.appending(" - ").appending(strSrcName)
+        cell.textLabel?.text = strTeamName
         cell.backgroundColor=UIColor.clear
         cell.textLabel?.textColor = tableCellTextColor
 
@@ -152,7 +149,6 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
         let teams : [Team] = allTeams
         var segueIdentifier = "showDetail"
         var strTeamName = ""
-        var strSrcName = ""
         
         var t: Team
         if searchController.isActive && searchController.searchBar.text != "" {
@@ -160,13 +156,12 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             {
                 t = filteredTeams[indexPath.row]
                 strTeamName = t.teamName.capitalized
-                strSrcName = t.sourceName.capitalized
                 
                 self.strTeamName = strTeamName
                 self.strSourceURL = t.sourceURL
                 
                 
-                print(strTeamName.appending(" - ").appending(strSrcName))
+                print(strTeamName)
             }
         }
         else
@@ -174,11 +169,10 @@ class TeamUpdatesViewController: UIViewController,UITableViewDelegate, UITableVi
             if(!teams.isEmpty && teams.count>0)
             {
                 strTeamName = teams[(indexPath as NSIndexPath).item].teamName.capitalized
-                strSrcName = teams[(indexPath as NSIndexPath).item].sourceName.capitalized
                 self.strTeamName = strTeamName
                 self.strSourceURL = teams[(indexPath as NSIndexPath).item].sourceURL
                 
-                print(strTeamName.appending(" - ").appending(strSrcName))
+                print(strTeamName)
             }
             
         }

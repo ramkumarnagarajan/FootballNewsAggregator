@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="TeamAndSource" representedClassName=".TeamAndSource" syncable="YES">
         <attribute name="sourceURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="teamName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="urlName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TeamAndSource" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="TeamAndSource" positionX="-63" positionY="-18" width="128" height="75"/>
     </elements>
 </model>

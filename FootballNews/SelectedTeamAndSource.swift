@@ -13,7 +13,6 @@ import UIKit
 class Team{
 
     var teamName:String = ""
-    var sourceName:String = ""
     var sourceURL : String = ""
     open static var selectedSource:String=""
     let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
@@ -23,7 +22,6 @@ class Team{
         let teamAndSource:Team = Team()
         print("ManageTeamsViewController.convertMatchingEntityToTeamAndSourceEntity")
         teamAndSource.sourceURL = (matchingEntity.value(forKey: "sourceURL") as? String)!
-        teamAndSource.sourceName = (matchingEntity.value(forKey: "urlName") as? String)!
         teamAndSource.teamName = (matchingEntity.value(forKey: "teamName") as! String)
         
         return teamAndSource
@@ -68,7 +66,7 @@ class Team{
     }
     
 
-    func saveData(_ teamName:String, sourceName:String, sourceURL:String) ->Bool
+    func saveData(_ teamName:String, sourceURL:String) ->Bool
     {
         var isDataSaved = false;
         
@@ -76,11 +74,6 @@ class Team{
         if(teamName.isEmpty)
         {
             print("teamName is empty")
-            return isDataSaved
-        }
-        if(sourceName.isEmpty)
-        {
-            print("sourceName is empty")
             return isDataSaved
         }
         if(sourceURL.isEmpty){
@@ -98,7 +91,6 @@ class Team{
         //Else, proceed to save.
         let myEntity =  NSEntityDescription.entity(forEntityName: "TeamAndSource",in: managedObjectContext)
         let TandS = TeamAndSource(entity:myEntity!,insertInto: managedObjectContext)
-        TandS.urlName = sourceName
         TandS.sourceURL = sourceURL
         TandS.teamName = teamName
         

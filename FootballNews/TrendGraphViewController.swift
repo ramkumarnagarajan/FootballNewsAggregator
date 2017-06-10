@@ -13,17 +13,17 @@ import Charts
 class TrendGraphViewController:UIViewController,ChartViewDelegate,IAxisValueFormatter
 {
     let months = ["Jan" , "Feb", "Mar", "Apr", "May", "June", "July", "August", "Sept", "Oct", "Nov", "Dec"]
-    let dollars1 = [1453.0,2352,5431,1442,5451,6887,2212]
+    let dollars1 = [1453.0,2352,5431,1442,5451,6887,2212,301,411,221,654]
     var chart: LineChartView!
     var dataSet: LineChartDataSet!
     var backButtonText:String=""
     
     @IBOutlet weak var lblHashTag: UILabel!
     @IBOutlet weak var lineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.title = "Trend Graphs"
-        lblHashTag.text = self.navigationController?.navigationItem.backBarButtonItem?.title
         // 1
         
         self.navigationController?.navigationItem.backBarButtonItem?.title = "hello"
