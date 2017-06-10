@@ -35,13 +35,13 @@ class ShowTrendViewController : UITableViewController{
         self.navigationController?.navigationBar.tintColor = titleTextColor
         let currentLat:Double = 13.0827
         let currentLong:Double = 80.2703
-        var _:Int64 = 1
         
         getCurrentLatAndLongAndWoeid(currentLat: currentLat,currentLong: currentLong)
+    
     }
     
     
-    func getCurrentLatAndLongAndWoeid(currentLat:Double,currentLong:Double) -> Int64 {
+    func getCurrentLatAndLongAndWoeid(currentLat:Double,currentLong:Double)  {
 
         let client = TWTRAPIClient()
         let params = ["lat":"\(currentLat)","long":"\(currentLong)"]
@@ -67,7 +67,7 @@ class ShowTrendViewController : UITableViewController{
                 currWoeid = 1
             }
         }
-        return currWoeid
+        return
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

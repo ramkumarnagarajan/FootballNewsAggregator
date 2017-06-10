@@ -19,13 +19,6 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     var txtSinceDate : UITextField = UITextField()
     var txtLocation : UITextField = UITextField()
     
-    @IBAction func showTrendGraphs(_ sender: UIBarButtonItem) {
-        
-        print("About to show Graphs")
-        let tgVC = TrendGraphViewController()
-        self.present(tgVC, animated: true, completion: nil)
-    }
-    
     //backgroundColorVariables
     let titleBackGroundColor = UIColor(red: 28/256, green: 29/256, blue: 41/256, alpha: 1)
     let bodyBackgroundColor = UIColor(red: 31/256, green: 32/256, blue: 35/256, alpha: 1)
@@ -33,8 +26,8 @@ class FilteredTweetsTableViewController: TWTRTimelineViewController {
     let titleTextColor = UIColor(red: 114/256, green: 132/256, blue: 148/256, alpha: 1)
     let tableBackgroundImage = UIImage(named: "LiverpoolAllBlack.png")
     
-    @IBOutlet weak var btnShowTrends: UIBarButtonItem!
     
+    @IBOutlet weak var btnShowTrends: UIBarButtonItem!
     @IBOutlet weak var btnShowFilters: UIBarButtonItem!
     
     override func viewDidLoad() {

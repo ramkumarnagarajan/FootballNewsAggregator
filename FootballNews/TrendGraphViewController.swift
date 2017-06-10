@@ -19,6 +19,9 @@ class TrendGraphViewController:UIViewController,ChartViewDelegate,IAxisValueForm
     var backButtonText:String=""
     
     @IBOutlet weak var lblHashTag: UILabel!
+
+    @IBOutlet weak var lblTitle: UILabel!
+    
     @IBOutlet weak var lineChartView: LineChartView!
     
     override func viewDidLoad() {

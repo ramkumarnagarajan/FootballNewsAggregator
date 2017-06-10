@@ -467,15 +467,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq6-os-hjE">
-                                <rect key="frame" x="20" y="72" width="255" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fep-bJ-JM4">
+                                <rect key="frame" x="292" y="89" width="184" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaU-U2-hpO" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="27" y="121" width="255" height="153"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-Xl-u1z" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="137" width="300" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -488,13 +488,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="lblHashTag" destination="Lq6-os-hjE" id="Kdj-dU-zeu"/>
-                        <outlet property="lineChartView" destination="EaU-U2-hpO" id="jjz-82-5sQ"/>
+                        <outlet property="lblTitle" destination="Fep-bJ-JM4" id="jgt-9q-zb8"/>
+                        <outlet property="lineChartView" destination="hxf-Xl-u1z" id="zCR-mH-6YD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZy-aX-67s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3074" y="377"/>
+            <point key="canvasLocation" x="-3100" y="377"/>
         </scene>
         <!--Filtered Tweets Table View Controller-->
         <scene sceneID="PKB-mZ-KJS">
@@ -536,14 +536,14 @@
                             </barButtonItem>
                             <barButtonItem image="Line Chart Filled-30.png" id="3mQ-K9-Y0i">
                                 <connections>
-                                    <action selector="showTrendGraphs:" destination="F98-g4-22O" id="6AT-zV-pBu"/>
+                                    <segue destination="yck-xv-q3a" kind="push" id="PmR-F8-SJM"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="btnShowFilters" destination="1PU-gd-sUX" id="hCo-ct-5Jw"/>
-                        <outlet property="btnShowTrends" destination="3mQ-K9-Y0i" id="J9l-G4-4xH"/>
+                        <outlet property="btnShowTrends" destination="3mQ-K9-Y0i" id="JZQ-kR-pdE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLi-E2-4JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
