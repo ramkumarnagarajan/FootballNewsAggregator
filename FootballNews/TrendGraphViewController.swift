@@ -24,6 +24,8 @@ class TrendGraphViewController:UIViewController,ChartViewDelegate,IAxisValueForm
     
     @IBOutlet weak var lineChartView: LineChartView!
     
+    @IBOutlet weak var pieChartView: PieChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.title = "Trend Graphs"
@@ -45,7 +47,7 @@ class TrendGraphViewController:UIViewController,ChartViewDelegate,IAxisValueForm
     }
 
     func setChartData(months : [String]) {
-        let values: [Double] = [8,22,44,48,77,14, 81, 71, 10, 41, 45, 61]
+        let values: [Double] = [8,22,44,48,77,14, 81, 716, 102, 41, 45, 61]
         
         var entries: [ChartDataEntry] = Array()
         
